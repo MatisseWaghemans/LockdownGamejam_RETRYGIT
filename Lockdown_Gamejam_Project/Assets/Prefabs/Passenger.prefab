@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4636686256736914398}
   - component: {fileID: 7556427693034287753}
   - component: {fileID: 2481947069509773582}
+  - component: {fileID: 5837932845537068225}
   - component: {fileID: 6784267895540379955}
   m_Layer: 13
   m_Name: Collider
@@ -99,6 +100,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &5837932845537068225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 101519198833531413}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c0eaf3e513326a4ca5cab4d2ca8d66c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!61 &6784267895540379955
 BoxCollider2D:
   m_ObjectHideFlags: 0

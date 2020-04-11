@@ -66,32 +66,38 @@ public class CivillianController : MonoBehaviour
         {
             StartCoroutine(Squash());
         }
-        transform.parent = _player.transform;
+     //   transform.parent = _player.transform;
+     //   
+     //   if(_player._followers.Capacity>=10)
+     //   {
+     //       _radius =4;
+     //   }
+     //   if(!_hasPosition)
+     //   {
+     //       _player._followers.Add(gameObject);
+     //       GetComponent<AudioSource>().clip = _clips[Random.Range(0,4)];
+     //       GetComponent<AudioSource>().Play();
+     //       _position = new Vector3((Random.insideUnitCircle.x*_radius),(Random.insideUnitCircle.y*_radius),0);
+     //       _hasPosition = true;
+     //   }
+     //   if(Vector3.Distance(transform.transform.position, _position)>_radius-0.2f)
+     //   {
+     //   transform.localPosition = Vector3.Lerp(transform.localPosition,_position,Time.deltaTime);
+     //   }
+     //   if(transform.parent.GetComponentInChildren<SpriteRenderer>().flipX)
+     //       _spriteRenderer.flipX = true;
+     //   else _spriteRenderer.flipX = false;
         
-        if(_player._followers.Capacity>=10)
-        {
-            _radius =4;
-        }
-        if(!_hasPosition)
-        {
-            _player._followers.Add(gameObject);
-            GetComponent<AudioSource>().clip = _clips[Random.Range(0,4)];
-            GetComponent<AudioSource>().Play();
-            _position = new Vector3((Random.insideUnitCircle.x*_radius),(Random.insideUnitCircle.y*_radius),0);
-            _hasPosition = true;
-        }
-        if(Vector3.Distance(transform.transform.position, _position)>_radius-0.2f)
-        {
-        transform.localPosition = Vector3.Lerp(transform.localPosition,_position,Time.deltaTime);
-        }
-        if(transform.parent.GetComponentInChildren<SpriteRenderer>().flipX)
-            _spriteRenderer.flipX = true;
-        else _spriteRenderer.flipX = false;
-        
+
+
     }
     public void Hit()
     {
         _spriteRenderer.sprite = _hitSprite;
+        FindObjectOfType<Flock>().agents.Add(GetComponent<Agent>());
+        GetComponentInChildren<SpriteFlock>().isEnabled = true;
+        gameObject.layer = 14;
+        transform.GetChild(0).gameObject.layer = 14;
         _isHit = true;
     }
 

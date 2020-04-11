@@ -6,7 +6,7 @@ using UnityEngine;
 public class Flock : MonoBehaviour
 {
     public Agent agentPrefab;
-    List<Agent> agents = new List<Agent>();
+    public List<Agent> agents = new List<Agent>();
     public Behaviour behaviour;
 
     const float AgentDensity = 2f;
