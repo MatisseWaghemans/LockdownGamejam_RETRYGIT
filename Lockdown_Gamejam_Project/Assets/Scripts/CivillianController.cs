@@ -16,7 +16,7 @@ public class CivillianController : MonoBehaviour
     [SerializeField] private float _Squash = 0.2f;
     [SerializeField] private float Frequency = 2f;
     private Vector3 _position;
-    private float _radius = 2;
+    private float _radius = 10;
     [SerializeField] private List<AudioClip> _clips = new List<AudioClip>(4);
 
     private SpriteRenderer _spriteRenderer;
@@ -60,7 +60,7 @@ public class CivillianController : MonoBehaviour
             if(distance<1)
             {
                 _moving = false;
-                _randomPos = _beginPos +new Vector3((Random.insideUnitCircle*5).x,(Random.insideUnitCircle*5).y,0);
+                _randomPos = _beginPos +new Vector3((Random.insideUnitCircle*_radius).x,(Random.insideUnitCircle*_radius).y,0);
                 _moving = true;
             }
         }

@@ -294,6 +294,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Car2
       objectReference: {fileID: 0}
+    - target: {fileID: 1590621340308993822, guid: b046b6adf972acc498447dc6aadaa40b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 1590621340308993823, guid: b046b6adf972acc498447dc6aadaa40b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -348,6 +353,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1590621340327508930, guid: b046b6adf972acc498447dc6aadaa40b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b046b6adf972acc498447dc6aadaa40b, type: 3}

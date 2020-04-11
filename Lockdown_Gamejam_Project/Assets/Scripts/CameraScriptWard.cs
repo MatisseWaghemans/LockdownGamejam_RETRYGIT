@@ -13,7 +13,8 @@ public class CameraScriptWard : MonoBehaviour
     float _timer;
     void Start()
     {
-
+      _generator = FindObjectOfType<Generator>();
+      _generator._roomList[_generator.CurrentRoom].GetComponentInChildren<SpawnController>().CallPeople();
     }
     private void FixedUpdate()
   {
@@ -22,11 +23,10 @@ public class CameraScriptWard : MonoBehaviour
     {
       transform.position = Vector3.Lerp(transform.position, position, LerpValue);
       _timer +=Time.deltaTime;
-      if(_timer>3)
+      if(_timer>1)
       {
         _move = false;
         _timer =0;
-        _generator._roomList[_generator.CurrentRoom].GetComponentInChildren<SpawnController>().enabled = true;
         GetComponentInChildren<RoomTriggerScript>().NextRoom = false;
       }
     }
@@ -47,6 +47,7 @@ public class CameraScriptWard : MonoBehaviour
     }
     GetComponentInChildren<RoomTriggerScript>()._enemies.Clear();
     GetComponentInChildren<RoomTriggerScript>()._passengers.Clear();
+    _generator._roomList[_generator.CurrentRoom].GetComponentInChildren<SpawnController>().CallPeople();
     _move = true;
   }
 }

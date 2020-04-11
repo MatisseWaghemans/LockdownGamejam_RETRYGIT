@@ -7,9 +7,9 @@ public class SpawnController : MonoBehaviour
     [SerializeField] private GameObject _enemyPrefab;
     [SerializeField] private GameObject _passengerPrefab;
     // Start is called before the first frame update
-    void Start()
+    public void CallPeople()
     {
-        for(int i =0;i<5;i++)
+                for(int i =0;i<5;i++)
         {
             Vector3 pos = transform.parent.position +new Vector3((Random.insideUnitCircle*10).x,(Random.insideUnitCircle*10).y,0);
             Instantiate(_passengerPrefab,pos,transform.rotation);
