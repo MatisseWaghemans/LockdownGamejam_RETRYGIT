@@ -5,7 +5,7 @@ using UnityEngine;
 public class SpawnController : MonoBehaviour
 {
     [SerializeField] private GameObject _enemyPrefab;
-    [SerializeField] private GameObject _passengerPrefab;
+    [SerializeField] private GameObject[] _passengerPrefab;
     private Generator _generator;
     // Start is called before the first frame update
     public void CallPeople()
@@ -14,7 +14,7 @@ public class SpawnController : MonoBehaviour
         for(int i =0;i<_generator.CurrentRoom+1;i++)
         {
             Vector3 pos = transform.parent.position +new Vector3((Random.insideUnitCircle*10).x,(Random.insideUnitCircle*10).y,0);
-            Instantiate(_passengerPrefab,pos,transform.rotation);
+            Instantiate(_passengerPrefab[Random.Range(0,2)],pos,transform.rotation);
         }
         for(int i =0;i<_generator.CurrentRoom+1;i++)
         {

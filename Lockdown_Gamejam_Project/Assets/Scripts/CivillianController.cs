@@ -40,11 +40,9 @@ public class CivillianController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-         _randomPos = _beginPos +new Vector3((Random.insideUnitCircle*_radius).x,(Random.insideUnitCircle*_radius).y,0);
+
         _rb.velocity = Vector2.one * _speed * Time.deltaTime;
         _player = FindObjectOfType<PlayerMovement>();
-        if(!_isHit)
-        {
             if (_moving)
             {
                 _rb.MovePosition(Vector2.Lerp(transform.position, _randomPos, Time.deltaTime * _speed));
@@ -62,41 +60,40 @@ public class CivillianController : MonoBehaviour
                 _randomPos = _beginPos +new Vector3((Random.insideUnitCircle*_radius).x,(Random.insideUnitCircle*_radius).y,0);
                 _moving = true;
             }
-        }
-        else FollowLeader();
     }
     void FollowLeader()
     {
-       if (_hasSquashed)
-        {
-            StartCoroutine(Squash());
-        }
-        transform.parent = _player.transform;
+    //    if (_hasSquashed)
+    //     {
+    //         StartCoroutine(Squash());
+    //     }
+    //     transform.parent = _player.transform;
         
-        if(_player._followers.Capacity>=10)
-        {
-            _radius =4;
-        }
-        if(!_hasPosition)
-        {
-            _player._followers.Add(gameObject);
-            GetComponent<AudioSource>().clip = _clips[Random.Range(0,4)];
-            GetComponent<AudioSource>().Play();
-            _position = _player.transform.position +new Vector3((Random.insideUnitCircle.x*_radius),(Random.insideUnitCircle.y*_radius),0);
-            _hasPosition = true;
-        }
-        if(Vector3.Distance(transform.transform.position, _position)>_radius-0.2f)
-        {
-        transform.localPosition = Vector3.Lerp(transform.localPosition,_position,Time.deltaTime);
-        }
-        if(transform.parent.GetComponentInChildren<SpriteRenderer>().flipX)
-            _spriteRenderer.flipX = true;
-        else _spriteRenderer.flipX = false;
+    //     if(_player._followers.Capacity>=10)
+    //     {
+    //         _radius =4;
+    //     }
+    //     if(!_hasPosition)
+    //     {
+    //         _player._followers.Add(gameObject);
+    //         GetComponent<AudioSource>().clip = _clips[Random.Range(0,4)];
+    //         GetComponent<AudioSource>().Play();
+    //         _position = _player.transform.position +new Vector3((Random.insideUnitCircle.x*_radius),(Random.insideUnitCircle.y*_radius),0);
+    //         _hasPosition = true;
+    //     }
+    //     if(Vector3.Distance(transform.transform.position, _position)>_radius-0.2f)
+    //     {
+    //     transform.localPosition = Vector3.Lerp(transform.localPosition,_position,Time.deltaTime);
+    //     }
+    //     if(transform.parent.GetComponentInChildren<SpriteRenderer>().flipX)
+    //         _spriteRenderer.flipX = true;
+    //     else _spriteRenderer.flipX = false;
     }
     public void Hit()
     {
         _spriteRenderer.sprite = _hitSprite;
-        //FindObjectOfType<Flock>().CreateBoy(transform.position, _hitSprite);
+        FindObjectOfType<Flock>().CreateBoy(transform.position, _hitSprite);
+        Destroy(gameObject);
         GetComponent<AudioSource>().clip = _clips[Random.Range(0,4)];
         GetComponent<AudioSource>().Play();
         _isHit=true;
