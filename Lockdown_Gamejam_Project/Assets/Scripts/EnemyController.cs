@@ -70,12 +70,14 @@ public class EnemyController : MonoBehaviour
         if(enemyPos.x>player.x)
         {
             _gun.GetComponentInChildren<SpriteRenderer>().flipY = true;
-            _gun.transform.localPosition = new Vector3(-0.4f,0.15f,-0.2f);
+            GetComponentInChildren<SpriteRenderer>().flipX=true;
+            _gun.transform.localPosition = new Vector3(-0.2f,-0.25f,-0.2f);
         }
         else
         {
             _gun.GetComponentInChildren<SpriteRenderer>().flipY = false;
-            _gun.transform.localPosition = new Vector3(0.38f,0.07f,-0.2f);
+            GetComponentInChildren<SpriteRenderer>().flipX=false;
+            _gun.transform.localPosition = new Vector3(0.05f,-0.25f,-0.2f);
         }
 
         Vector3 lookAt = _player.transform.position;

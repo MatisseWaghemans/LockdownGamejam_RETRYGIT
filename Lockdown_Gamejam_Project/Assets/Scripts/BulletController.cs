@@ -33,6 +33,9 @@ public class BulletController : MonoBehaviour
         {
             Destroy(gameObject);
         }
-        Destroy(gameObject);
+        if(collider.CompareTag("Player"))
+        {
+            Destroy(gameObject);
+        }
     }
 }
