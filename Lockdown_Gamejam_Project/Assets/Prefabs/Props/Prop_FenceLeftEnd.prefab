@@ -145,7 +145,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _sortingOrderBase: 5000
-  _offset: 0
+  _offset: -1
   _runOnlyOnce: 1
 --- !u!1 &2400515598048044704
 GameObject:

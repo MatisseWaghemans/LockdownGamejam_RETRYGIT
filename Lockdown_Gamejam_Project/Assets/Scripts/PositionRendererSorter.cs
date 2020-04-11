@@ -5,7 +5,7 @@ using UnityEngine;
 public class PositionRendererSorter : MonoBehaviour
 {
     [SerializeField] private int _sortingOrderBase = 5000;
-    [SerializeField] private int _offset = 0;
+    [SerializeField] private float _offset = 0;
     [SerializeField] private bool _runOnlyOnce = false;
 
     private float _timer;
