@@ -160,8 +160,9 @@ public class EnemyController : MonoBehaviour
         if(!_isHit)
         {
             character.GetComponent<Collider2D>().enabled = false;
-        GetComponent<AudioSource>().clip = _clips[Random.Range(0,5)];
-        GetComponent<AudioSource>().Play();
+            GetComponent<AudioSource>().clip = _clips[Random.Range(0,5)];
+            GetComponent<AudioSource>().Play();
+            _rb.isKinematic=true;
         
         }
         _isHit = true;

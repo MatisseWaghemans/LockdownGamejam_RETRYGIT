@@ -11,14 +11,15 @@ public class SpawnController : MonoBehaviour
     {
         for(int i =0;i<15;i++)
         {
-            Vector3 pos = Random.insideUnitCircle*10;
+            Vector3 pos = transform.parent.position +new Vector3((Random.insideUnitCircle*10).x,(Random.insideUnitCircle*10).y,0);
             Instantiate(_passengerPrefab,pos,transform.rotation);
         }
         for(int i =0;i<2;i++)
         {
-            Vector3 pos = Random.insideUnitCircle*10;
+            Vector3 pos = transform.parent.position +new Vector3((Random.insideUnitCircle*10).x,(Random.insideUnitCircle*10).y,0);
             Instantiate(_enemyPrefab,pos,transform.rotation);
         }
+            FindObjectOfType<RoomTriggerScript>().CheckPeople();
     }
 
     // Update is called once per frame

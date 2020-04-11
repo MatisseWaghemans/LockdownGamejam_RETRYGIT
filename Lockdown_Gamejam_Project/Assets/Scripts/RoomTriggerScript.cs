@@ -12,7 +12,7 @@ public class RoomTriggerScript : MonoBehaviour
     [SerializeField] private Generator _generator;
 
     // Start is called before the first frame update
-    void Start()
+    public void CheckPeople()
     {
         foreach(Collider2D col in _colliders)
         {
@@ -37,18 +37,7 @@ public class RoomTriggerScript : MonoBehaviour
             }
             else _allEnemiesHit = true;
         }
-
-        foreach(CivillianController passenger in _passengers)
-        {
-            if(passenger ==null)
-            _passengers.Remove(passenger);
-            if(!passenger.IsHit)
-            {
-                return;
-            }
-            else _allPassengersHit = true;
-        }
-        if(_allEnemiesHit&&_allPassengersHit)
+        if(_allEnemiesHit)
         {
             _generator.CurrentRoom++;
             GoToNextRoom();
@@ -82,6 +71,10 @@ public class RoomTriggerScript : MonoBehaviour
     {
         if(other.CompareTag("Player"))
         {
+            foreach(Collider2D col in _colliders)
+            {
+                col.enabled =false;
+            }
             GetComponentInParent<CameraScriptWard>().MoveToNextRoom();
         }
     }

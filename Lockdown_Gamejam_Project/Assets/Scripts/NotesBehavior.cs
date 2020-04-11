@@ -39,7 +39,7 @@ public class NotesBehavior : MonoBehaviour
         if(other.gameObject.tag =="Civillian")
         {
             // if(other.transform.parent.CompareTag("Player"))
-            if(other.transform.parent!=null)
+            if(other.GetComponent<CivillianController>().IsHit)
             {
                 return;
             }

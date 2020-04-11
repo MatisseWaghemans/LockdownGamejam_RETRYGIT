@@ -11,8 +11,13 @@ public class CameraScriptWard : MonoBehaviour
     bool _move;
     int _previousRoom;
     float _timer;
+    void Start()
+    {
+
+    }
     private void FixedUpdate()
   {
+
     if(_move)
     {
       transform.position = Vector3.Lerp(transform.position, position, LerpValue);
@@ -21,6 +26,7 @@ public class CameraScriptWard : MonoBehaviour
       {
         _move = false;
         _timer =0;
+        _generator._roomList[_generator.CurrentRoom].GetComponentInChildren<SpawnController>().enabled = true;
         GetComponentInChildren<RoomTriggerScript>().NextRoom = false;
       }
     }
@@ -29,12 +35,16 @@ public class CameraScriptWard : MonoBehaviour
   {
     if(!_move)
     {
-    position = _generator._roomPositionList[_generator.CurrentRoom];
-    Direction = transform.position-position;
+      position = _generator._roomPositionList[_generator.CurrentRoom];
+      Direction = transform.position-position;
     }
   }
   public void MoveToNextRoom()
   {
+    foreach(EnemyController enemy in GetComponentInChildren<RoomTriggerScript>()._enemies)
+    {
+      Destroy(enemy);
+    }
     GetComponentInChildren<RoomTriggerScript>()._enemies.Clear();
     GetComponentInChildren<RoomTriggerScript>()._passengers.Clear();
     _move = true;

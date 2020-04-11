@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class CivillianController : MonoBehaviour
 {
+    private Vector3 _beginPos;
     private Vector3 _randomPos;
     [SerializeField] private Sprite _hitSprite;
     private bool _moving = true;
     private bool _isHit;
-    public bool IsHit { get => _isHit; }
+    public bool IsHit { set=>_isHit = value;get => _isHit; }
     private PlayerMovement _player;
     private bool _hasPosition;
     private bool _hasSquashed = true;
@@ -21,15 +22,16 @@ public class CivillianController : MonoBehaviour
     private SpriteRenderer _spriteRenderer;
     private Rigidbody2D _rb;
 
-    [SerializeField] private float _speed = 5f;
+    [SerializeField] private float _speed = 1f;
     [SerializeField]private RoomTriggerScript _rooms;
+    
 
     // Start is called before the first frame update
     void Start()
     {
-        _rooms = GetComponent<RoomTriggerScript>();
+        _beginPos = transform.position;
+        _rooms = FindObjectOfType<RoomTriggerScript>();
         _player = FindObjectOfType<PlayerMovement>();
-        _randomPos = new Vector3(Random.insideUnitCircle.x*10,Random.insideUnitCircle.y*10,0);
 
         _spriteRenderer = this.GetComponentInChildren<SpriteRenderer>();
         _rb = this.GetComponent<Rigidbody2D>();
@@ -57,52 +59,55 @@ public class CivillianController : MonoBehaviour
             if(distance<1)
             {
                 _moving = false;
-                _randomPos =Random.insideUnitCircle*10;
+                _randomPos = _beginPos +new Vector3((Random.insideUnitCircle*10).x,(Random.insideUnitCircle*10).y,0);
+                _moving = true;
             }
         }
         else FollowLeader();
     }
     void FollowLeader()
     {
-      //  if (_hasSquashed)
-      //  {
-      //      StartCoroutine(Squash());
-      //  }
-     //   transform.parent = _player.transform;
-     //   
-     //   if(_player._followers.Capacity>=10)
-     //   {
-     //       _radius =4;
-     //   }
-     //   if(!_hasPosition)
-     //   {
-     //       _player._followers.Add(gameObject);
-     //       GetComponent<AudioSource>().clip = _clips[Random.Range(0,4)];
-     //       GetComponent<AudioSource>().Play();
-     //       _position = new Vector3((Random.insideUnitCircle.x*_radius),(Random.insideUnitCircle.y*_radius),0);
-     //       _hasPosition = true;
-     //   }
-     //   if(Vector3.Distance(transform.transform.position, _position)>_radius-0.2f)
-     //   {
-     //   transform.localPosition = Vector3.Lerp(transform.localPosition,_position,Time.deltaTime);
-     //   }
-     //   if(transform.parent.GetComponentInChildren<SpriteRenderer>().flipX)
-     //       _spriteRenderer.flipX = true;
-     //   else _spriteRenderer.flipX = false;
+       if (_hasSquashed)
+        {
+            StartCoroutine(Squash());
+        }
+        transform.parent = _player.transform;
         
-
-
+        if(_player._followers.Capacity>=10)
+        {
+            _radius =4;
+        }
+        if(!_hasPosition)
+        {
+            _player._followers.Add(gameObject);
+            GetComponent<AudioSource>().clip = _clips[Random.Range(0,4)];
+            GetComponent<AudioSource>().Play();
+            _position = new Vector3((Random.insideUnitCircle.x*_radius),(Random.insideUnitCircle.y*_radius),0);
+            _hasPosition = true;
+        }
+        if(Vector3.Distance(transform.transform.position, _position)>_radius-0.2f)
+        {
+        transform.localPosition = Vector3.Lerp(transform.localPosition,_position,Time.deltaTime);
+        }
+        if(transform.parent.GetComponentInChildren<SpriteRenderer>().flipX)
+            _spriteRenderer.flipX = true;
+        else _spriteRenderer.flipX = false;
     }
     public void Hit()
     {
         _spriteRenderer.sprite = _hitSprite;
-        FindObjectOfType<Flock>().CreateBoy(transform.position, _hitSprite);
-        Destroy(gameObject);
+        //FindObjectOfType<Flock>().CreateBoy(transform.position, _hitSprite);
+        GetComponent<AudioSource>().clip = _clips[Random.Range(0,4)];
+        GetComponent<AudioSource>().Play();
+        _isHit=true;
     }
     public void HitBullet()
     {
+        if(IsHit)
+        {
         _rooms._passengers.Remove(this);
         Destroy(gameObject);
+        }
     }
 
     IEnumerator Squash()

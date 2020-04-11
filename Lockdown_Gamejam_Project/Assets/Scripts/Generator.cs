@@ -15,7 +15,7 @@ public class Generator : MonoBehaviour
     public GameObject[] LWayLeftBottomRooms;
 
     public List<Vector2> _roomPositionList = new List<Vector2>();
-    private List<GameObject> _roomList = new List<GameObject>();
+    public readonly List<GameObject> _roomList = new List<GameObject>();
 
     [SerializeField]
     public int NumberOfRooms = 5;
@@ -29,7 +29,7 @@ public class Generator : MonoBehaviour
     private GameObject _room;
 
     private int _randomRoomIndex = 0;
-    public int CurrentRoom;
+    public int CurrentRoom =0;
 
     private void Start()
     {
