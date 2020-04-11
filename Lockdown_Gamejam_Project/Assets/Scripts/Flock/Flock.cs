@@ -51,7 +51,7 @@ public class Flock : MonoBehaviour
 
     }
 
-    public void CreateBoy(Vector3 position)
+    public void CreateBoy(Vector3 position, Sprite sprite)
     {
         Agent newAgent = Instantiate(
             agentPrefab,
@@ -60,6 +60,7 @@ public class Flock : MonoBehaviour
             transform
             );
         newAgent.name = "Agent " + agents.Count;
+        newAgent.transform.GetComponentInChildren<SpriteRenderer>().sprite = sprite;
         agents.Add(newAgent);
     }
 

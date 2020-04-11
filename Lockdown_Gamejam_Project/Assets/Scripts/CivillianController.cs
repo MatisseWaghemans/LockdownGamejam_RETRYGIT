@@ -94,7 +94,7 @@ public class CivillianController : MonoBehaviour
     public void Hit()
     {
         _spriteRenderer.sprite = _hitSprite;
-        FindObjectOfType<Flock>().CreateBoy(transform.position);
+        FindObjectOfType<Flock>().CreateBoy(transform.position, _hitSprite);
         Destroy(gameObject);
     }
 
