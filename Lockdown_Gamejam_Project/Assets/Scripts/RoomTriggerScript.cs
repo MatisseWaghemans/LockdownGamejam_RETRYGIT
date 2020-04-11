@@ -9,6 +9,9 @@ public class RoomTriggerScript : MonoBehaviour
     CivillianController[] _passengers;
     public List<EnemyController> _hitEnemies = new List<EnemyController>();
     public List<CivillianController> _hitPassengers = new List<CivillianController>();
+    bool _allEnemiesHit, _allPassengersHit;
+    public bool NextRoom;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -17,6 +20,8 @@ public class RoomTriggerScript : MonoBehaviour
         {
             col.enabled =false;
         }
+        _enemies =FindObjectsOfType<EnemyController>();
+        _passengers = FindObjectsOfType<CivillianController>();
     }
 
     // Update is called once per frame
@@ -24,24 +29,28 @@ public class RoomTriggerScript : MonoBehaviour
     {
         foreach(EnemyController enemy in _enemies)
         {
-            if(enemy._isHit)
+            if(!enemy._isHit)
             {
-                _hitEnemies.Add(enemy);
+                return;               
             }
+            else _allEnemiesHit = true;
         }
-        // foreach(CivillianController passenger in _passengers)
-        // {
-        //     if(passenger._isHit)
-        //     {
-        //         _hitPassengers.Add(passenger);
-        //     }
-        // }
-        if(_enemies.Length==_hitEnemies.Count && _passengers.Length == _hitPassengers.Count)
+
+        foreach(CivillianController passenger in _passengers)
         {
-        foreach(Collider2D col in _colliders)
+            if(!passenger.IsHit)
+            {
+                return;
+            }
+            else _allPassengersHit = true;
+        }
+        if(_allEnemiesHit&&_allPassengersHit)
         {
-            col.enabled =true;
+            GoToNextRoom();
         }
-        }
+    }
+    void GoToNextRoom()
+    {
+        NextRoom = true;
     }
 }

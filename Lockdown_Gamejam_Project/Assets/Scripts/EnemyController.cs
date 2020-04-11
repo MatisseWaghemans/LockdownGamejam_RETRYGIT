@@ -12,13 +12,14 @@ public class EnemyController : MonoBehaviour
     private GameObject _player;
     private float _timer;
     private bool _hasShot = true;
-    private bool _isHit;
+    public bool _isHit;
 
     private Rigidbody2D _rb;
 
     private bool _hasSquashed = true;
     [SerializeField] private float _Squash = 0.2f;
     [SerializeField] private float Frequency = 2f;
+    [SerializeField] private List<AudioClip> _clips = new List<AudioClip>(5);
 
     void Start()
     {
