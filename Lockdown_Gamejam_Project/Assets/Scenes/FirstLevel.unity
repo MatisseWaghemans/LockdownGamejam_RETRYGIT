@@ -267,6 +267,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b046b6adf972acc498447dc6aadaa40b, type: 3}
+--- !u!114 &811505818 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 950766707671620786, guid: a2b85ee4ab5e22b4f8a624fee91e0aa9,
+    type: 3}
+  m_PrefabInstance: {fileID: 109550421}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9a930dd8fc735140a3252e2ceed6bd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &875660066
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -492,9 +504,62 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95b8e00f5c3a3d84a8392d0789f7b5ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _hitEnemies: []
-  _hitPassengers: []
+  _colliders:
+  - {fileID: 1065242458}
+  - {fileID: 1065242459}
+  - {fileID: 1065242457}
+  - {fileID: 1065242460}
+  _enemies: []
+  _passengers: []
   NextRoom: 0
+  _generator: {fileID: 811505818}
+--- !u!1 &1525086443
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1525086444}
+  - component: {fileID: 1525086445}
+  m_Layer: 0
+  m_Name: Spawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1525086444
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1525086443}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1525086445
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1525086443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29eb245d62f4a1d4b86ce049bfd9e049, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _enemyPrefab: {fileID: 1567688146341985699, guid: 9a5e9bec1eb052147b3612acb83af977,
+    type: 3}
+  _passengerPrefab: {fileID: 1878334358286104561, guid: 87841d4c90c2d4a4d90fe86034cf9910,
+    type: 3}
 --- !u!1 &1771581831
 GameObject:
   m_ObjectHideFlags: 0
@@ -625,8 +690,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee2744df2c0a7e644a2932a38a946656, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _generator: {fileID: 0}
+  _generator: {fileID: 811505818}
   LerpValue: 1
+  Direction: {x: 0, y: 0, z: 0}
 --- !u!82 &1771581837
 AudioSource:
   m_ObjectHideFlags: 0

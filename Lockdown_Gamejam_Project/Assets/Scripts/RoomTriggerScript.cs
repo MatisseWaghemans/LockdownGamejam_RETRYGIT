@@ -4,18 +4,16 @@ using UnityEngine;
 
 public class RoomTriggerScript : MonoBehaviour
 {
-    Collider2D[] _colliders;
-    EnemyController[] _enemies;
-    CivillianController[] _passengers;
-    public List<EnemyController> _hitEnemies = new List<EnemyController>();
-    public List<CivillianController> _hitPassengers = new List<CivillianController>();
+    [SerializeField]private List<Collider2D> _colliders = new List<Collider2D>();
+    public EnemyController[] _enemies;
+    public CivillianController[] _passengers;
     bool _allEnemiesHit, _allPassengersHit;
     public bool NextRoom;
+    [SerializeField] private Generator _generator;
 
     // Start is called before the first frame update
     void Start()
     {
-        _colliders = GetComponents<Collider2D>();
         foreach(Collider2D col in _colliders)
         {
             col.enabled =false;
@@ -27,6 +25,8 @@ public class RoomTriggerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(!NextRoom)
+        {
         foreach(EnemyController enemy in _enemies)
         {
             if(!enemy._isHit)
@@ -46,11 +46,39 @@ public class RoomTriggerScript : MonoBehaviour
         }
         if(_allEnemiesHit&&_allPassengersHit)
         {
+            _generator.CurrentRoom++;
             GoToNextRoom();
+            NextRoom = true;
         }
+        }
+
     }
     void GoToNextRoom()
     {
-        NextRoom = true;
+
+        GetComponentInParent<CameraScriptWard>().NextRoom();
+        if(GetComponentInParent<CameraScriptWard>().Direction.x>0)
+        {
+            _colliders[1].enabled=true;
+        }
+        if(GetComponentInParent<CameraScriptWard>().Direction.x<0)
+        {
+            _colliders[3].enabled=true;
+        }
+        if(GetComponentInParent<CameraScriptWard>().Direction.y<0)
+        {
+            _colliders[0].enabled=true;
+        }
+        if(GetComponentInParent<CameraScriptWard>().Direction.y>0)
+        {
+            _colliders[2].enabled=true;
+        }
+    }
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if(other.CompareTag("Player"))
+        {
+            GetComponentInParent<CameraScriptWard>().MoveToNextRoom();
+        }
     }
 }
