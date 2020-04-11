@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4471997457248334366}
   - component: {fileID: 3419926977798738963}
   - component: {fileID: 2654595468269300502}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -156,7 +156,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2400515598048044705}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Prop_FenceLeftEnd
   m_TagString: Untagged
   m_Icon: {fileID: 0}

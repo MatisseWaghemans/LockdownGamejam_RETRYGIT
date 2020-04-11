@@ -17,11 +17,15 @@ public class CivillianController : MonoBehaviour
     private float _radius = 2;
     [SerializeField] private List<AudioClip> _clips = new List<AudioClip>(4);
 
+    private SpriteRenderer _spriteRenderer;
+
     // Start is called before the first frame update
     void Start()
     {
         _player = FindObjectOfType<PlayerMovement>();
         _randomPos = new Vector3(Random.insideUnitCircle.x*10,Random.insideUnitCircle.y*10,0);
+
+        _spriteRenderer = this.GetComponentInChildren<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -70,13 +74,13 @@ public class CivillianController : MonoBehaviour
         transform.localPosition = Vector3.Lerp(transform.localPosition,_position,Time.deltaTime);
         }
         if(transform.parent.GetComponentInChildren<SpriteRenderer>().flipX)
-        GetComponent<SpriteRenderer>().flipX = true;
-        else GetComponent<SpriteRenderer>().flipX = false;
+            _spriteRenderer.flipX = true;
+        else _spriteRenderer.flipX = false;
         
     }
     public void Hit()
     {
-        GetComponent<SpriteRenderer>().sprite = _hitSprite;
+        _spriteRenderer.sprite = _hitSprite;
         _isHit = true;
     }
 

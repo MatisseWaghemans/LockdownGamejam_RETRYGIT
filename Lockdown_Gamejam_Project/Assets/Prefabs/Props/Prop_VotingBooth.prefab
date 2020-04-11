@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7074061605224637606}
   - component: {fileID: 7074061605224637607}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Sprite_Curtain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92,7 +92,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7074061605348687138}
   - component: {fileID: 7074061605348687139}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: SPrite_Back
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -173,7 +173,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7074061605398406478}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Prop_VotingBooth
   m_TagString: Untagged
   m_Icon: {fileID: 0}

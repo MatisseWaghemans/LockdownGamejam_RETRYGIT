@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1567688146062323086}
   - component: {fileID: 459614601377110580}
   - component: {fileID: 6316849941435421512}
-  m_Layer: 12
+  m_Layer: 13
   m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -97,7 +97,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _sortingOrderBase: 5000
-  _offset: 0
+  _offset: -5
   _runOnlyOnce: 0
 --- !u!61 &6316849941435421512
 BoxCollider2D:
@@ -112,7 +112,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.040492624, y: -0.41884553}
+  m_Offset: {x: -0.070625305, y: -0.8859036}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -123,7 +123,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.39998454, y: 0.12614942}
+  m_Size: {x: 0.7856841, y: 0.19244146}
   m_EdgeRadius: 0
 --- !u!1 &1567688146341985699
 GameObject:
@@ -137,6 +137,7 @@ GameObject:
   - component: {fileID: 1567688146341985701}
   - component: {fileID: 1567688146341985703}
   - component: {fileID: -5916362556103559674}
+  - component: {fileID: 6232100132983916540}
   m_Layer: 12
   m_Name: Enemy
   m_TagString: Enemy
@@ -300,6 +301,27 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!50 &6232100132983916540
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1567688146341985699}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &4415734834236094426
 GameObject:
   m_ObjectHideFlags: 0
