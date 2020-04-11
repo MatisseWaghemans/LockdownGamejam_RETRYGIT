@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _sortingOrderBase: 5000
-  _offset: -10
+  _offset: -5
   _runOnlyOnce: 0
 --- !u!212 &2481947069509773582
 SpriteRenderer:

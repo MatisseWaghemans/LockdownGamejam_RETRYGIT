@@ -12,15 +12,21 @@ public class EnemyController : MonoBehaviour
     private GameObject _player;
     private float _timer;
     private bool _hasShot = true;
-    private bool _isHit;
-    [SerializeField] private List<AudioClip> _clips = new List<AudioClip>(4);
-    // Start is called before the first frame update
+    public bool _isHit;
+
+    private Rigidbody2D _rb;
+
+    private bool _hasSquashed = true;
+    [SerializeField] private float _Squash = 0.2f;
+    [SerializeField] private float Frequency = 2f;
+    [SerializeField] private List<AudioClip> _clips = new List<AudioClip>(5);
+
     void Start()
     {
-
+        _rb = this.GetComponent<Rigidbody2D>();
     }
 
-    // Update is called once per frame
+
     void Update()
     {
         if(FindObjectOfType<PlayerMovement>()==null)
@@ -35,6 +41,10 @@ public class EnemyController : MonoBehaviour
         if(distance<10)
         {
             _timer += Time.deltaTime;
+            if (_hasSquashed)
+            {
+                StartCoroutine(Squash());
+            }
             FollowPlayer();
             MoveGun();
             if(_timer>3)
@@ -51,6 +61,25 @@ public class EnemyController : MonoBehaviour
         }
         
     }
+    IEnumerator Squash()
+    {
+        float time = 0;
+        _hasSquashed = false;
+
+
+        float sin = 0;
+
+        while (sin >= 0)
+        {
+            sin = _Squash * Mathf.Sin(time * Frequency);
+            transform.localScale = Vector3.one + new Vector3(-sin, sin, -sin);
+            time += Time.deltaTime;
+            yield return new WaitForEndOfFrame();
+        }
+        _hasSquashed = true;
+        yield return null;
+    }
+
     void ShootPlayer()
     {
         if (_hasShot)
@@ -61,7 +90,7 @@ public class EnemyController : MonoBehaviour
     }
     void FollowPlayer()
     {
-        transform.position = Vector3.Lerp(transform.position,_player.transform.position,Time.deltaTime*0.3f);
+        _rb.MovePosition(Vector2.Lerp(transform.position,_player.transform.position,Time.deltaTime*0.3f));
     }
 
     private void MoveGun()
@@ -124,8 +153,11 @@ public class EnemyController : MonoBehaviour
     }
     public void Hit()
     {
+        if(!_isHit)
+        {
         GetComponent<AudioSource>().clip = _clips[Random.Range(0,5)];
         GetComponent<AudioSource>().Play();
+        }
         _isHit = true;
     }
 }
