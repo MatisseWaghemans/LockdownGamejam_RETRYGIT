@@ -20,10 +20,12 @@ public class EnemyController : MonoBehaviour
     [SerializeField] private float _Squash = 0.2f;
     [SerializeField] private float Frequency = 2f;
     [SerializeField] private List<AudioClip> _clips = new List<AudioClip>(5);
+    RoomTriggerScript _room;
 
     void Start()
     {
         _rb = this.GetComponent<Rigidbody2D>();
+        _room =FindObjectOfType<RoomTriggerScript>();
     }
 
 
@@ -38,6 +40,7 @@ public class EnemyController : MonoBehaviour
         if(!_isHit)
         {
         float distance = Vector3.Distance(transform.position,_player.transform.position);
+        _rb.isKinematic =true;
         if(distance<10)
         {
             _timer += Time.deltaTime;
@@ -90,6 +93,7 @@ public class EnemyController : MonoBehaviour
     }
     void FollowPlayer()
     {
+        _rb.isKinematic=false;
         _rb.MovePosition(Vector2.Lerp(transform.position,_player.transform.position,Time.deltaTime*0.3f));
     }
 
@@ -155,9 +159,10 @@ public class EnemyController : MonoBehaviour
     {
         if(!_isHit)
         {
-                character.GetComponent<Collider2D>().enabled = false;
+            character.GetComponent<Collider2D>().enabled = false;
         GetComponent<AudioSource>().clip = _clips[Random.Range(0,5)];
         GetComponent<AudioSource>().Play();
+        
         }
         _isHit = true;
     }

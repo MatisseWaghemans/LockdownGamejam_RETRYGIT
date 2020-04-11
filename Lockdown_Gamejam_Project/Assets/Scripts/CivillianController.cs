@@ -22,6 +22,7 @@ public class CivillianController : MonoBehaviour
     private Rigidbody2D _rb;
 
     [SerializeField] private float _speed = 5f;
+    RoomTriggerScript _room;
 
     // Start is called before the first frame update
     void Start()
@@ -31,6 +32,7 @@ public class CivillianController : MonoBehaviour
 
         _spriteRenderer = this.GetComponentInChildren<SpriteRenderer>();
         _rb = this.GetComponent<Rigidbody2D>();
+        _room =FindObjectOfType<RoomTriggerScript>();
     }
 
     // Update is called once per frame
@@ -56,6 +58,7 @@ public class CivillianController : MonoBehaviour
             {
                 _moving = false;
                 _randomPos =Random.insideUnitCircle*10;
+                _moving = true;
             }
         }
         else FollowLeader();
@@ -99,6 +102,11 @@ public class CivillianController : MonoBehaviour
         gameObject.layer = 14;
         transform.GetChild(0).gameObject.layer = 14;
         _isHit = true;
+    }
+    public void HitBullet()
+    {
+        _room._passengers.Remove(this);
+        Destroy(gameObject);
     }
 
     IEnumerator Squash()

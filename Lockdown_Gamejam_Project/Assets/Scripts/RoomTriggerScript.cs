@@ -5,8 +5,8 @@ using UnityEngine;
 public class RoomTriggerScript : MonoBehaviour
 {
     [SerializeField]private List<Collider2D> _colliders = new List<Collider2D>();
-    public EnemyController[] _enemies;
-    public CivillianController[] _passengers;
+    public List<EnemyController> _enemies= new List<EnemyController>();
+    public List<CivillianController> _passengers = new List<CivillianController>();
     bool _allEnemiesHit, _allPassengersHit;
     public bool NextRoom;
     [SerializeField] private Generator _generator;
@@ -18,8 +18,8 @@ public class RoomTriggerScript : MonoBehaviour
         {
             col.enabled =false;
         }
-        _enemies =FindObjectsOfType<EnemyController>();
-        _passengers = FindObjectsOfType<CivillianController>();
+        _enemies.AddRange(FindObjectsOfType<EnemyController>());
+        _passengers.AddRange(FindObjectsOfType<CivillianController>());
     }
 
     // Update is called once per frame
@@ -29,6 +29,8 @@ public class RoomTriggerScript : MonoBehaviour
         {
         foreach(EnemyController enemy in _enemies)
         {
+            if(enemy ==null)
+            _enemies.Remove(enemy);
             if(!enemy._isHit)
             {
                 return;               
@@ -38,6 +40,8 @@ public class RoomTriggerScript : MonoBehaviour
 
         foreach(CivillianController passenger in _passengers)
         {
+            if(passenger ==null)
+            _passengers.Remove(passenger);
             if(!passenger.IsHit)
             {
                 return;

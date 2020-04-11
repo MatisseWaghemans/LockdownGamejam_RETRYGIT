@@ -9,14 +9,14 @@ public class SpawnController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        for(int i =0;i<25;i++)
+        for(int i =0;i<15;i++)
         {
-            Vector3 pos = Random.insideUnitCircle*5;
+            Vector3 pos = Random.insideUnitCircle*10;
             Instantiate(_passengerPrefab,pos,transform.rotation);
         }
-        for(int i =0;i<5;i++)
+        for(int i =0;i<2;i++)
         {
-            Vector3 pos = Random.insideUnitCircle*5;
+            Vector3 pos = Random.insideUnitCircle*10;
             Instantiate(_enemyPrefab,pos,transform.rotation);
         }
     }
