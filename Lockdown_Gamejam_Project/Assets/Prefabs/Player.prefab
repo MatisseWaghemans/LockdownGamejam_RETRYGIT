@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1928481859629567652}
   - component: {fileID: 6177092232035350908}
+  - component: {fileID: 6088708834775860591}
   m_Layer: 11
   m_Name: Gun
   m_TagString: Untagged
@@ -81,6 +82,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &6088708834775860591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1003588247295392720}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca2b4ddc01f231345aa8ba608972e2e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _sortingOrderBase: 5000
+  _offset: 0
+  _runOnlyOnce: 0
 --- !u!1 &2696298615302025641
 GameObject:
   m_ObjectHideFlags: 0
@@ -177,7 +193,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.018808722, y: 0.0016385317}
+  m_Offset: {x: -0.060655475, y: -0.79565287}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -188,7 +204,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.3521974, y: 1.8878138}
+  m_Size: {x: 0.875412, y: 0.31442165}
   m_EdgeRadius: 0
 --- !u!82 &3977199184126258895
 AudioSource:
@@ -296,6 +312,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2696298615556219269}
   - component: {fileID: 2696298615556219268}
+  - component: {fileID: 5637899083912866319}
   m_Layer: 11
   m_Name: Sprite
   m_TagString: Untagged
@@ -367,6 +384,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &5637899083912866319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2696298615556219270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca2b4ddc01f231345aa8ba608972e2e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _sortingOrderBase: 5000
+  _offset: 0
+  _runOnlyOnce: 0
 --- !u!1 &5663662817298223473
 GameObject:
   m_ObjectHideFlags: 0
