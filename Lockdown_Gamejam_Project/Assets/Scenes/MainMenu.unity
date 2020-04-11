@@ -258,7 +258,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 311, y: 362.13666}
+  m_AnchoredPosition: {x: 373, y: 362.13666}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &338271936
@@ -619,7 +619,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 487049769}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -684, y: 355, z: -68.000244}
+  m_LocalPosition: {x: -622, y: 355, z: -68.000244}
   m_LocalScale: {x: 167.03856, y: 167.03856, z: 167.03856}
   m_Children: []
   m_Father: {fileID: 1196908152}
@@ -1139,7 +1139,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 765553129}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 102, y: 355, z: -68.000244}
+  m_LocalPosition: {x: 164, y: 355, z: -68.000244}
   m_LocalScale: {x: 167.03856, y: 167.03856, z: 167.03856}
   m_Children: []
   m_Father: {fileID: 1196908152}
@@ -2112,7 +2112,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1472976550}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 560, y: 355, z: -68.000244}
+  m_LocalPosition: {x: 622, y: 355, z: -68.000244}
   m_LocalScale: {x: 167.03856, y: 167.03856, z: 167.03856}
   m_Children: []
   m_Father: {fileID: 1196908152}
@@ -2296,7 +2296,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1582344962}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 223, y: -59.701496, z: -121.93725}
+  m_LocalPosition: {x: 228, y: -59.701496, z: -121.93725}
   m_LocalScale: {x: 0.7855459, y: 0.7855459, z: 0.7855459}
   m_Children:
   - {fileID: 1387136044}
@@ -2342,6 +2342,8 @@ MonoBehaviour:
   ladaAnimator: {fileID: 0}
   playerAnimator: {fileID: 0}
   vignetteAnimator: {fileID: 0}
+  VictoryScreen: {fileID: 0}
+  ScoreScreen: {fileID: 0}
   UIfunctions: {fileID: 0}
 --- !u!1 &1637594730
 GameObject:
@@ -2376,6 +2378,8 @@ MonoBehaviour:
   ladaAnimator: {fileID: 1904860052}
   playerAnimator: {fileID: 944746518}
   vignetteAnimator: {fileID: 1895836583}
+  VictoryScreen: {fileID: 0}
+  ScoreScreen: {fileID: 0}
   UIfunctions: {fileID: 0}
 --- !u!4 &1637594732
 Transform:
@@ -2891,7 +2895,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1835053360}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -323, y: 355, z: -68.000244}
+  m_LocalPosition: {x: -261, y: 355, z: -68.000244}
   m_LocalScale: {x: 167.03856, y: 167.03856, z: 167.03856}
   m_Children: []
   m_Father: {fileID: 1196908152}

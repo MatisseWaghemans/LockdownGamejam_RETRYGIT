@@ -27,7 +27,7 @@ public class UIFunctions : MonoBehaviour
         {
             timer += Time.deltaTime;
         }
-        if (timer >= 0.5f)
+        if (timer >= 4.5f)
         {
             OpenMenu();
             timer = 0;
