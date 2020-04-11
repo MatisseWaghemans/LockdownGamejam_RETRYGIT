@@ -7,6 +7,7 @@ TagManager:
   - Enemy
   - Civillian
   - Wall
+  - Prop
   layers:
   - Default
   - TransparentFX
@@ -20,7 +21,7 @@ TagManager:
   - Car
   - Civilian
   - Player
-  - 
+  - Enemy
   - 
   - 
   - 
