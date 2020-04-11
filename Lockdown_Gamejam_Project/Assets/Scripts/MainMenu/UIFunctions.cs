@@ -19,24 +19,27 @@ public class UIFunctions : MonoBehaviour
 
     private void Update()
     {
-        if (playClicked)
-        {
-            timer += Time.deltaTime;
-        }
-        if (timer >= 3)
-        {
-            StartGame();
-            timer = 0;
-        }
         if (returnClicked)
         {
             timer += Time.deltaTime;
         }
-        if (timer >= 3)
+        if (timer >= 4.5f)
         {
             OpenMenu();
             timer = 0;
+            returnClicked = false;
         }
+        if (playClicked)
+        {
+            timer += Time.deltaTime;
+        }
+        if (timer >= 4.5f)
+        {
+            StartGame();
+            timer = 0;
+            playClicked = false;
+        }
+
     }
     public void TriggerCameraShake()
     {
