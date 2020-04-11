@@ -9,6 +9,10 @@ public class UIFunctions : MonoBehaviour
     public Animator playerAnimator;
     public Animator vignetteAnimator;
 
+    public GameObject VictoryScreen;
+    public GameObject ScoreScreen;
+
+
 
     public GameObject UIfunctions;
 
@@ -23,7 +27,7 @@ public class UIFunctions : MonoBehaviour
         {
             timer += Time.deltaTime;
         }
-        if (timer >= 4.5f)
+        if (timer >= 0.5f)
         {
             OpenMenu();
             timer = 0;
@@ -75,6 +79,12 @@ public class UIFunctions : MonoBehaviour
     public void OpenMenu()
     {
         SceneManager.LoadScene("MainMenu");
+    }
+    public void OpenScore()
+    {
+        ScoreScreen.SetActive(true);
+        VictoryScreen.SetActive(false);
+
     }
 
 }
