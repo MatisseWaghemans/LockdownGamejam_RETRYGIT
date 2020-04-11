@@ -4,14 +4,13 @@ using UnityEngine;
 
 public class CameraScriptWard : MonoBehaviour
 {
-    [SerializeField] private Transform Player;
+    [SerializeField] private Generator _generator;
     [SerializeField] private float  LerpValue;
-
 
     private void FixedUpdate()
   {
-    Player = FindObjectOfType<PlayerMovement>().transform;
-      transform.position = Vector3.Lerp(transform.position,
-          new Vector3(Player.position.x, Player.position.y, transform.position.z), LerpValue);
+    Vector3 position = _generator._roomPositionList[_generator.CurrentRoom];
+      transform.position = Vector3.Lerp(transform.position, position, LerpValue);
   }
 }
+ 

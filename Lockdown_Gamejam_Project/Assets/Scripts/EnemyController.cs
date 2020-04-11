@@ -152,6 +152,11 @@ public class EnemyController : MonoBehaviour
     }
     public void Hit()
     {
+        if(!_isHit)
+        {
+        GetComponent<AudioSource>().clip = _clips[Random.Range(0,5)];
+        GetComponent<AudioSource>().Play();
+        }
         _isHit = true;
     }
 }
