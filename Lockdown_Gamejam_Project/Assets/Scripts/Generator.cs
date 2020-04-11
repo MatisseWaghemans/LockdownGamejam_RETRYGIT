@@ -29,6 +29,7 @@ public class Generator : MonoBehaviour
     private GameObject _room;
 
     private int _randomRoomIndex = 0;
+    public int CurrentRoom;
 
     private void Start()
     {
