@@ -35,6 +35,10 @@ public class BulletController : MonoBehaviour
         }
         if(collider.CompareTag("Player"))
         {
+            if(collider.GetComponent<PlayerMovement>().IsHit){
+                return;
+            }
+            collider.GetComponent<PlayerMovement>().Die();
             Destroy(gameObject);
         }
     }

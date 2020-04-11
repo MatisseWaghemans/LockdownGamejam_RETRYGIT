@@ -2,13 +2,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
 
     public float moveSpeed = 5f;
 
-    private Rigidbody2D rigidbody;
+    private Rigidbody2D _rigidbody;
     private bool _hasSquashed = true;
     private bool _hasTurned = false;
     [SerializeField] private float _Squash = 0.2f;
@@ -29,12 +30,14 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private AudioClip _shootingStart;
     [SerializeField] private AudioClip _shootingMid;
     [SerializeField] private AudioClip _shootingEnd;
+    [SerializeField] private AudioClip _dieClip;
 
     Vector2 movement;
+    public bool IsHit;
     // Start is called before the first frame update
     void Start()
     {
-        rigidbody = GetComponent<Rigidbody2D>();
+        _rigidbody = GetComponent<Rigidbody2D>();
     }
 
     private void Update()
@@ -131,7 +134,7 @@ public class PlayerMovement : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        rigidbody.MovePosition(rigidbody.position + movement * moveSpeed * Time.deltaTime);
+        _rigidbody.MovePosition(_rigidbody.position + movement * moveSpeed * Time.deltaTime);
     }
 
 
@@ -185,5 +188,13 @@ public class PlayerMovement : MonoBehaviour
         }
         _hasSquashed = true;
         yield return null;
+    }
+    public void Die()
+    {
+        IsHit = true;
+        _rigidbody.isKinematic =true;
+        GetComponent<AudioSource>().clip = _dieClip;
+        GetComponent<AudioSource>().Play();
+        SceneManager.LoadScene(2);
     }
 }

@@ -159,6 +159,7 @@ MonoBehaviour:
   _shootingStart: {fileID: 8300000, guid: 4033445028a91bd44988f4441c64c7b8, type: 3}
   _shootingMid: {fileID: 8300000, guid: 54868fc69c9c06848b384bac955a7f47, type: 3}
   _shootingEnd: {fileID: 8300000, guid: 2b704b117490a4c4a992420847053df5, type: 3}
+  _dieClip: {fileID: 8300000, guid: 05cfd600e851e494b8508df4d0dc0204, type: 3}
 --- !u!82 &3977199184126258895
 AudioSource:
   m_ObjectHideFlags: 0
