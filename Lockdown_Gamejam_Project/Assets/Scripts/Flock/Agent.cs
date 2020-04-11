@@ -9,6 +9,7 @@ public class Agent : MonoBehaviour
 
     private bool _isFilpped = false;
     public Collider2D AgentCollider { get { return agentCollider; } }
+    private bool _hasSquashed = true;
 
 
     Rigidbody2D rb;
@@ -34,6 +35,12 @@ public class Agent : MonoBehaviour
 
         rb.MovePosition(transform.position + (Vector3)velocity * Time.deltaTime);
 
+
+        if (_hasSquashed)
+        {
+            StartCoroutine(Squash());
+        }
+
         //  if (_isFilpped && velocity.x > 0)
         //  {
         //      GetComponentInChildren<SpriteRenderer>().flipX = false;
@@ -46,4 +53,26 @@ public class Agent : MonoBehaviour
         //      _isFilpped = true;
         //  }
     }
+
+
+    IEnumerator Squash()
+    {
+        float time = 0;
+        _hasSquashed = false;
+
+
+        float sin = 0;
+
+        while (sin >= 0)
+        {
+            sin = _Squash * Mathf.Sin(time * Frequency);
+            transform.localScale = Vector3.Scale(Vector3.one + new Vector3(-sin, sin, -sin), Vector3.one * 2);
+            time += Time.deltaTime;
+            yield return new WaitForEndOfFrame();
+        }
+        _hasSquashed = true;
+        yield return null;
+    }
+
+
 }
