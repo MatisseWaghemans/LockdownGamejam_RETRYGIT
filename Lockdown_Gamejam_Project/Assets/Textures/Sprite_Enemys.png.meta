@@ -1,25 +1,13 @@
 fileFormatVersion: 2
-guid: ba73f48ca30a64a47902bbad9499855f
+guid: 972bb9b71b999144eac3339c9e1c8e25
 TextureImporter:
   internalIDToNameTable:
   - first:
       213: -8605556646268389980
-    second: Sprite_civilian01-Angry
+    second: Sprite_Enemys01
   - first:
       213: -7476909315587334984
-    second: Sprite_civilian01-Happy
-  - first:
-      213: -72115348640886897
-    second: Sprite_civilian01-Angry
-  - first:
-      213: -646966504056094398
-    second: Sprite_civilian01-Happy
-  - first:
-      213: -1216627175085383403
-    second: Sprite_civilian02-Angry
-  - first:
-      213: 9197878406815581912
-    second: Sprite_civilian02-Happy
+    second: Sprite_Enemys_1
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -63,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 512
+  spritePixelsToUnits: 256
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -105,7 +93,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Sprite_civilian01-Angry
+      name: Sprite_Enemys01
       rect:
         serializedVersion: 2
         x: 0
@@ -119,35 +107,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f8f0865f87bcffef0800000000000000
-      internalID: -72115348640886897
+      spriteID: 4a5bbac03dbe29880800000000000000
+      internalID: -8605556646268389980
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_civilian01-Happy
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 512
-        width: 512
-        height: 512
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 241092074638507f0800000000000000
-      internalID: -646966504056094398
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sprite_civilian02-Angry
+      name: Sprite_Enemys_1
       rect:
         serializedVersion: 2
         x: 0
@@ -161,29 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 511e2fcb70cad1fe0800000000000000
-      internalID: -1216627175085383403
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sprite_civilian02-Happy
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 0
-        width: 512
-        height: 512
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8d68a75bdad65af70800000000000000
-      internalID: 9197878406815581912
+      spriteID: 8bc9b92879eac3890800000000000000
+      internalID: -7476909315587334984
       vertices: []
       indices: 
       edges: []
@@ -191,7 +137,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: c82fd23f9a0215848b945f9a8c0d6817
+    spriteID: bb53842fd5c21874694b2b71a947d181
     internalID: 0
     vertices: []
     indices: 
