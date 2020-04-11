@@ -1,0 +1,2981 @@
+fileFormatVersion: 2
+guid: 6810f74d5b9380e498ea4dcdec3f9118
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7811078585045921620
+    second: TilleMap_City_Grass01
+  - first:
+      213: 151643338067715509
+    second: TilleMap_City_Grass02
+  - first:
+      213: 4467543471398472264
+    second: TilleMap_City_Grass03
+  - first:
+      213: -3838820732323212079
+    second: TilleMap_City_dirt01
+  - first:
+      213: 1694275083406771309
+    second: TilleMap_City_dirt02
+  - first:
+      213: 5405742191556821332
+    second: TilleMap_City_dirt03
+  - first:
+      213: 4026799616830633472
+    second: TilleMap_City_Road01
+  - first:
+      213: -3068389083870331391
+    second: TilleMap_City_Road02
+  - first:
+      213: 1972382404501617994
+    second: TilleMap_City_Road03
+  - first:
+      213: 8594062284742599907
+    second: TilleMap_City_Road01
+  - first:
+      213: -5949312547753243109
+    second: TilleMap_City_Grass01
+  - first:
+      213: -181624918617192289
+    second: TilleMap_City_Grass02
+  - first:
+      213: -5369552168770603724
+    second: TilleMap_City_Grass03
+  - first:
+      213: 9034911511401632188
+    second: TilleMap_City_dirt01
+  - first:
+      213: -6040581726661036661
+    second: TilleMap_City_dirt02
+  - first:
+      213: -2287766880653078780
+    second: TilleMap_City_dirt03
+  - first:
+      213: 6959473668438600154
+    second: TilleMap_City_Road02
+  - first:
+      213: -9187045352016178634
+    second: TilleMap_City_Road03
+  - first:
+      213: -8274013350069580643
+    second: TilleMap_City_Grass04
+  - first:
+      213: 7598658308304699201
+    second: TilleMap_City_dirt00
+  - first:
+      213: -3638128475250701049
+    second: TilleMap_City_Grass05
+  - first:
+      213: -4970325582626174000
+    second: TilleMap_City_dirt04
+  - first:
+      213: -6657474233524799478
+    second: TilleMap_City_Grass00
+  - first:
+      213: -4964583303231766190
+    second: TilleMap_City_dirt05
+  - first:
+      213: 5165173978866074192
+    second: TilleMap_City_Road04
+  - first:
+      213: -7283459773634203777
+    second: TilleMap_City_Road24
+  - first:
+      213: 1935039177458029829
+    second: TilleMap_City_Road05
+  - first:
+      213: -3926945769253202501
+    second: TilleMap_City_Grass06
+  - first:
+      213: 7647777543481118198
+    second: TilleMap_City_Grass07
+  - first:
+      213: -3253752425698067438
+    second: TilleMap_City_Grass08
+  - first:
+      213: 2812535902248019255
+    second: TilleMap_City_dirt06
+  - first:
+      213: -2781800902597950313
+    second: TilleMap_City_dirt07
+  - first:
+      213: 2673660092440680687
+    second: TilleMap_City_dirt08
+  - first:
+      213: -4583333407170052942
+    second: TilleMap_City_Road06
+  - first:
+      213: 7506130310529150334
+    second: TilleMap_City_Road07
+  - first:
+      213: -5398357482231430660
+    second: TilleMap_City_Road08
+  - first:
+      213: 2398624638539638796
+    second: TilleMap_City_Grass09
+  - first:
+      213: 7630572472872038340
+    second: TilleMap_City_Grass10
+  - first:
+      213: -6661734356488157940
+    second: TilleMap_City_Grass13
+  - first:
+      213: -7156926825999043430
+    second: TilleMap_City_dirt09
+  - first:
+      213: 944825681150544166
+    second: TilleMap_City_dirt10
+  - first:
+      213: 4117420527857320004
+    second: TilleMap_City_dirt13
+  - first:
+      213: 6332836108215613931
+    second: TilleMap_City_Road09
+  - first:
+      213: 8336167002243944319
+    second: TilleMap_City_Road10
+  - first:
+      213: 8341465796326141498
+    second: TilleMap_City_Road13
+  - first:
+      213: 8120286598590502209
+    second: TilleMap_City_Grass11
+  - first:
+      213: -3049510436152076459
+    second: TilleMap_City_Grass12
+  - first:
+      213: 6771111876991350637
+    second: TilleMap_City_Grass14
+  - first:
+      213: -7985108502563276943
+    second: TilleMap_City_dirt11
+  - first:
+      213: 8982956440201458358
+    second: TilleMap_City_dirt12
+  - first:
+      213: -7917012304999543451
+    second: TilleMap_City_dirt14
+  - first:
+      213: 9194385162902760199
+    second: TilleMap_City_Road111
+  - first:
+      213: 431039852495159163
+    second: TilleMap_City_Road12
+  - first:
+      213: -8262439422729407348
+    second: TilleMap_City_Road14
+  - first:
+      213: -8590504013571257917
+    second: TilleMap_City_Tille01
+  - first:
+      213: 2719719858866313462
+    second: TilleMap_City_Tille02
+  - first:
+      213: -7520173776897693257
+    second: TilleMap_City_Tille03
+  - first:
+      213: 4504574237364220550
+    second: TilleMap_City_48
+  - first:
+      213: 51452947043201650
+    second: TilleMap_City_Road15
+  - first:
+      213: 4671565196022613184
+    second: TilleMap_City_Road16
+  - first:
+      213: -4225029170202747461
+    second: TilleMap_City_Road17
+  - first:
+      213: -5145438115974717212
+    second: TilleMap_City_Road18
+  - first:
+      213: -7639888422838523569
+    second: TilleMap_City_Road19
+  - first:
+      213: 6472264187400124402
+    second: TilleMap_City_Tille04
+  - first:
+      213: -6580005466626366328
+    second: TilleMap_City_55
+  - first:
+      213: 9133144573073832795
+    second: TilleMap_City_Tille05
+  - first:
+      213: 3424756741101989544
+    second: TilleMap_City_57
+  - first:
+      213: 702792061527846360
+    second: TilleMap_City_Road00
+  - first:
+      213: 4769788222558710691
+    second: TilleMap_City_Road21
+  - first:
+      213: -8212046539824903236
+    second: TilleMap_City_Road22
+  - first:
+      213: 4747057027667390870
+    second: TilleMap_City_Road23
+  - first:
+      213: 1445429540082747478
+    second: TilleMap_City_Road20
+  - first:
+      213: 558007515014526204
+    second: TilleMap_City_Tille06
+  - first:
+      213: 303584774270101146
+    second: TilleMap_City_Tille07
+  - first:
+      213: -692921139044395162
+    second: TilleMap_City_Tille08
+  - first:
+      213: -4961958277094960085
+    second: TilleMap_City_Tille09
+  - first:
+      213: -3928146580175580508
+    second: TilleMap_City_Tille10
+  - first:
+      213: 3099673928493081087
+    second: TilleMap_City_68
+  - first:
+      213: -4684538880470793813
+    second: TilleMap_City_69
+  - first:
+      213: -7546828944865842956
+    second: TilleMap_City_70
+  - first:
+      213: -5874032011115844538
+    second: TilleMap_City_71
+  - first:
+      213: -5354463394936932135
+    second: TilleMap_City_Tille00
+  - first:
+      213: 2585939399735016679
+    second: TilleMap_City_Tille13
+  - first:
+      213: -611957558843562735
+    second: TilleMap_City_Tille14
+  - first:
+      213: -4358554492830622492
+    second: TilleMap_City_Tille11
+  - first:
+      213: -1152613046990894991
+    second: TilleMap_City_Tille12
+  - first:
+      213: 2546229923344624185
+    second: TilleMap_City_77
+  - first:
+      213: -7238299865797647524
+    second: TilleMap_City_78
+  - first:
+      213: 1342865568932254537
+    second: TilleMap_City_79
+  - first:
+      213: 3510683369782323677
+    second: TilleMap_City_80
+  - first:
+      213: -4715957898775810854
+    second: TilleMap_City_81
+  - first:
+      213: -430136385061330195
+    second: TilleMap_City_82
+  - first:
+      213: 7592806292119011132
+    second: TilleMap_City_83
+  - first:
+      213: -1964555314655799616
+    second: TilleMap_City_84
+  - first:
+      213: -5665507718925103167
+    second: TilleMap_City_85
+  - first:
+      213: -5593452322323476080
+    second: TilleMap_City_86
+  - first:
+      213: -4804428903413825038
+    second: TilleMap_City_87
+  - first:
+      213: 846196523940480839
+    second: TilleMap_City_88
+  - first:
+      213: -6917144716242125038
+    second: TilleMap_City_89
+  - first:
+      213: -94740110610096179
+    second: TilleMap_City_90
+  - first:
+      213: -4437809201752123618
+    second: TilleMap_City_91
+  - first:
+      213: -5953489136445181227
+    second: TilleMap_City_92
+  - first:
+      213: -8820753890262613531
+    second: TilleMap_City_93
+  - first:
+      213: 5301453241376505447
+    second: TilleMap_City_94
+  - first:
+      213: 1991894320723848346
+    second: TilleMap_City_95
+  - first:
+      213: -2656013309399230875
+    second: TilleMap_City_96
+  - first:
+      213: -2612728793007454009
+    second: TilleMap_City_97
+  - first:
+      213: -5394348196421343486
+    second: TilleMap_City_98
+  - first:
+      213: -2282631740987482231
+    second: TilleMap_City_99
+  - first:
+      213: -5087365700264293818
+    second: TilleMap_City_100
+  - first:
+      213: 5757190981435029501
+    second: TilleMap_City_101
+  - first:
+      213: 2009110788943758576
+    second: TilleMap_City_102
+  - first:
+      213: -3104117863402501326
+    second: TilleMap_City_103
+  - first:
+      213: -1245304767462659873
+    second: TilleMap_City_104
+  - first:
+      213: 4256163604469274847
+    second: TilleMap_City_105
+  - first:
+      213: 3489073472766119344
+    second: TilleMap_City_106
+  - first:
+      213: 4174305165768455838
+    second: TilleMap_City_107
+  - first:
+      213: -4995661960293961162
+    second: TilleMap_City_108
+  - first:
+      213: -5541225191972671000
+    second: TilleMap_City_109
+  - first:
+      213: 7889305731283170590
+    second: TilleMap_City_110
+  - first:
+      213: 5705480569796765732
+    second: TilleMap_City_111
+  - first:
+      213: -8459542210314141863
+    second: TilleMap_City_112
+  - first:
+      213: -6132295344200334928
+    second: TilleMap_City_113
+  - first:
+      213: -8229791173865358250
+    second: TilleMap_City_114
+  - first:
+      213: 121474221404216251
+    second: TilleMap_City_115
+  - first:
+      213: 6452717047863412847
+    second: TilleMap_City_116
+  - first:
+      213: 5928002743773031313
+    second: TilleMap_City_117
+  - first:
+      213: 9127838438987833367
+    second: TilleMap_City_118
+  - first:
+      213: -1613937875796547274
+    second: TilleMap_City_119
+  - first:
+      213: 3301050212712660693
+    second: TilleMap_City_120
+  - first:
+      213: 3638641467218895595
+    second: TilleMap_City_121
+  - first:
+      213: -4464874416695828040
+    second: TilleMap_City_122
+  - first:
+      213: 3614216663252267495
+    second: TilleMap_City_123
+  - first:
+      213: 1716760183585896430
+    second: TilleMap_City_124
+  - first:
+      213: -4487377596598658109
+    second: TilleMap_City_125
+  - first:
+      213: -6402631256899291972
+    second: TilleMap_City_126
+  - first:
+      213: -4991088709945323072
+    second: TilleMap_City_127
+  - first:
+      213: 4322799179896761558
+    second: TilleMap_City_128
+  - first:
+      213: 6685354181259927821
+    second: TilleMap_City_129
+  - first:
+      213: 7280356373596823547
+    second: TilleMap_City_130
+  - first:
+      213: 6189056514446489844
+    second: TilleMap_City_131
+  - first:
+      213: -388530756589144737
+    second: TilleMap_City_132
+  - first:
+      213: 4468920766771817300
+    second: TilleMap_City_133
+  - first:
+      213: -3726656828224417158
+    second: TilleMap_City_134
+  - first:
+      213: 3350886406699601654
+    second: TilleMap_City_135
+  - first:
+      213: -7489116736539175029
+    second: TilleMap_City_136
+  - first:
+      213: -782652816103715390
+    second: TilleMap_City_137
+  - first:
+      213: -1143743099366967514
+    second: TilleMap_City_138
+  - first:
+      213: -1595387032094413409
+    second: TilleMap_City_139
+  - first:
+      213: -6727854275093530039
+    second: TilleMap_City_140
+  - first:
+      213: 8709770699159123758
+    second: TilleMap_City_141
+  - first:
+      213: 8575204350059350853
+    second: TilleMap_City_142
+  - first:
+      213: -9006950933727922172
+    second: TilleMap_City_143
+  - first:
+      213: -3298562055806757541
+    second: TilleMap_City_144
+  - first:
+      213: -1523064235912700958
+    second: TilleMap_City_145
+  - first:
+      213: -1662435887192230740
+    second: TilleMap_City_146
+  - first:
+      213: -4183912654128913021
+    second: TilleMap_City_147
+  - first:
+      213: -796321205461334013
+    second: TilleMap_City_148
+  - first:
+      213: -9114256247338977304
+    second: TilleMap_City_149
+  - first:
+      213: 8625632432563115635
+    second: TilleMap_City_150
+  - first:
+      213: 3070983187904826109
+    second: TilleMap_City_151
+  - first:
+      213: -924756349193218190
+    second: TilleMap_City_152
+  - first:
+      213: 2544018572850434630
+    second: TilleMap_City_153
+  - first:
+      213: -5904936360891419472
+    second: TilleMap_City_154
+  - first:
+      213: -2069188565940639371
+    second: TilleMap_City_155
+  - first:
+      213: -6343126984197201405
+    second: TilleMap_City_156
+  - first:
+      213: 5722936921977792695
+    second: TilleMap_City_157
+  - first:
+      213: 5171281689073475618
+    second: TilleMap_City_158
+  - first:
+      213: 7937911747584522179
+    second: TilleMap_City_159
+  - first:
+      213: -7203909686189308663
+    second: TilleMap_City_160
+  - first:
+      213: 3792970061628555717
+    second: TilleMap_City_161
+  - first:
+      213: -8494797251763400314
+    second: TilleMap_City_162
+  - first:
+      213: 3494330557819513170
+    second: TilleMap_City_163
+  - first:
+      213: 1659205959795416838
+    second: TilleMap_City_164
+  - first:
+      213: 7961295057371724277
+    second: TilleMap_City_165
+  - first:
+      213: -1376366654713733738
+    second: TilleMap_City_166
+  - first:
+      213: -4565512215149300096
+    second: TilleMap_City_167
+  - first:
+      213: 3752255537938164014
+    second: TilleMap_City_168
+  - first:
+      213: -2425723475532192842
+    second: TilleMap_City_169
+  - first:
+      213: 8530998623100084329
+    second: TilleMap_City_170
+  - first:
+      213: -8881962625316119712
+    second: TilleMap_City_171
+  - first:
+      213: -5454052910687626056
+    second: TilleMap_City_172
+  - first:
+      213: 7316562416948759862
+    second: TilleMap_City_173
+  - first:
+      213: -5333367998132985008
+    second: TilleMap_City_174
+  - first:
+      213: -6623911253111677948
+    second: TilleMap_City_175
+  - first:
+      213: -7458064958049620921
+    second: TilleMap_City_176
+  - first:
+      213: 8284486158093163809
+    second: TilleMap_City_177
+  - first:
+      213: -6490842839993259312
+    second: TilleMap_City_178
+  - first:
+      213: 2591850859827184537
+    second: TilleMap_City_179
+  - first:
+      213: 2835499876353925070
+    second: TilleMap_City_180
+  - first:
+      213: -2934638519432430315
+    second: TilleMap_City_181
+  - first:
+      213: -2225171551646552231
+    second: TilleMap_City_182
+  - first:
+      213: 271487066778896342
+    second: TilleMap_City_183
+  - first:
+      213: 5971809823283408825
+    second: TilleMap_City_184
+  - first:
+      213: -606853461507584046
+    second: TilleMap_City_185
+  - first:
+      213: -8313959708854743973
+    second: TilleMap_City_186
+  - first:
+      213: -5142011274848574540
+    second: TilleMap_City_187
+  - first:
+      213: 1805676339229530069
+    second: TilleMap_City_188
+  - first:
+      213: -2698632978109032597
+    second: TilleMap_City_189
+  - first:
+      213: 3023637619903011124
+    second: TilleMap_City_190
+  - first:
+      213: 3233577694531355023
+    second: TilleMap_City_191
+  - first:
+      213: 7350518826792291049
+    second: TilleMap_City_192
+  - first:
+      213: -3810807129604261136
+    second: TilleMap_City_193
+  - first:
+      213: 3018109600436733330
+    second: TilleMap_City_194
+  - first:
+      213: -6676797587101705067
+    second: TilleMap_City_195
+  - first:
+      213: 7401571412899234616
+    second: TilleMap_City_196
+  - first:
+      213: 709917703299772871
+    second: TilleMap_City_197
+  - first:
+      213: 4332528281743444421
+    second: TilleMap_City_198
+  - first:
+      213: 5637676165652400941
+    second: TilleMap_City_199
+  - first:
+      213: 3329759823904112413
+    second: TilleMap_City_200
+  - first:
+      213: -4868034615722290653
+    second: TilleMap_City_201
+  - first:
+      213: -8147133973437488898
+    second: TilleMap_City_202
+  - first:
+      213: -113929669618159450
+    second: TilleMap_City_203
+  - first:
+      213: 1404805748560902868
+    second: TilleMap_City_204
+  - first:
+      213: -6270097859940506855
+    second: TilleMap_City_205
+  - first:
+      213: 799138343067429634
+    second: TilleMap_City_206
+  - first:
+      213: -2562046029868131023
+    second: TilleMap_City_207
+  - first:
+      213: 4338560802612552361
+    second: TilleMap_City_208
+  - first:
+      213: -4155741876707446431
+    second: TilleMap_City_209
+  - first:
+      213: 6270234036896001042
+    second: TilleMap_City_210
+  - first:
+      213: -4365456598103962908
+    second: TilleMap_City_211
+  - first:
+      213: -7248971784592826454
+    second: TilleMap_City_212
+  - first:
+      213: -3509346495689033247
+    second: TilleMap_City_213
+  - first:
+      213: -2279233454478028271
+    second: TilleMap_City_214
+  - first:
+      213: 2868191511840300874
+    second: TilleMap_City_215
+  - first:
+      213: -7418785545376145920
+    second: TilleMap_City_216
+  - first:
+      213: -8509774365758870061
+    second: TilleMap_City_217
+  - first:
+      213: -4247307202016395520
+    second: TilleMap_City_218
+  - first:
+      213: -103907785573164527
+    second: TilleMap_City_219
+  - first:
+      213: 4297939788056481611
+    second: TilleMap_City_220
+  - first:
+      213: 7400094576746484865
+    second: TilleMap_City_221
+  - first:
+      213: -5473479209642417772
+    second: TilleMap_City_222
+  - first:
+      213: -7952011773782139127
+    second: TilleMap_City_223
+  - first:
+      213: 1836354325362228897
+    second: TilleMap_City_224
+  - first:
+      213: 608502904750040147
+    second: TilleMap_City_225
+  - first:
+      213: -4352896269977235526
+    second: TilleMap_City_226
+  - first:
+      213: -5869929984635418872
+    second: TilleMap_City_227
+  - first:
+      213: 3058394076422101092
+    second: TilleMap_City_228
+  - first:
+      213: 6518854128302535058
+    second: TilleMap_City_229
+  - first:
+      213: 6623008770025241755
+    second: TilleMap_City_230
+  - first:
+      213: 7088933238602501653
+    second: TilleMap_City_231
+  - first:
+      213: 5610371867647725649
+    second: TilleMap_City_232
+  - first:
+      213: 3291513745659946260
+    second: TilleMap_City_233
+  - first:
+      213: -2823703776313905949
+    second: TilleMap_City_234
+  - first:
+      213: 3750960783703801689
+    second: TilleMap_City_235
+  - first:
+      213: -977130109193860128
+    second: TilleMap_City_236
+  - first:
+      213: 1525564685925236186
+    second: TilleMap_City_237
+  - first:
+      213: 6398495283760629403
+    second: TilleMap_City_238
+  - first:
+      213: -8931219199440806511
+    second: TilleMap_City_239
+  - first:
+      213: -127812726861015723
+    second: TilleMap_City_240
+  - first:
+      213: -487990330162257593
+    second: TilleMap_City_241
+  - first:
+      213: 4645163674169398591
+    second: TilleMap_City_242
+  - first:
+      213: -1500675002061885200
+    second: TilleMap_City_243
+  - first:
+      213: -1737719492765563117
+    second: TilleMap_City_244
+  - first:
+      213: 9051708331282604371
+    second: TilleMap_City_245
+  - first:
+      213: 3051550591540473272
+    second: TilleMap_City_246
+  - first:
+      213: 3290900381172028915
+    second: TilleMap_City_247
+  - first:
+      213: 7077968304245233817
+    second: TilleMap_City_248
+  - first:
+      213: -6332016174661770181
+    second: TilleMap_City_249
+  - first:
+      213: 1914688422061014109
+    second: TilleMap_City_250
+  - first:
+      213: 825042748806440132
+    second: TilleMap_City_251
+  - first:
+      213: -41899920160193930
+    second: TilleMap_City_252
+  - first:
+      213: 5088832599653156136
+    second: TilleMap_City_253
+  - first:
+      213: 7775884923075758655
+    second: TilleMap_City_254
+  - first:
+      213: 4859838999398609908
+    second: TilleMap_City_255
+  - first:
+      213: -3299351168693595828
+    second: TilleMap_City_Grass04
+  - first:
+      213: -2343738525075850899
+    second: TilleMap_City_dirt00
+  - first:
+      213: -7834055385384348622
+    second: TilleMap_City_Grass05
+  - first:
+      213: 9100065404508442787
+    second: TilleMap_City_dirt04
+  - first:
+      213: -376759112005370373
+    second: TilleMap_City_Grass00
+  - first:
+      213: -5722646539843600270
+    second: TilleMap_City_dirt05
+  - first:
+      213: -6897242835147858113
+    second: TilleMap_City_Road04
+  - first:
+      213: 5081392135734534501
+    second: TilleMap_City_Road24
+  - first:
+      213: -5992382570447398614
+    second: TilleMap_City_Road05
+  - first:
+      213: -3614322955112787681
+    second: TilleMap_City_Grass06
+  - first:
+      213: 2744121301652070754
+    second: TilleMap_City_Grass07
+  - first:
+      213: 848412724687071660
+    second: TilleMap_City_Grass08
+  - first:
+      213: 2644456674039564519
+    second: TilleMap_City_dirt06
+  - first:
+      213: 8776469284588727083
+    second: TilleMap_City_dirt07
+  - first:
+      213: -4559459673869530493
+    second: TilleMap_City_dirt08
+  - first:
+      213: 1265056411492570087
+    second: TilleMap_City_Road06
+  - first:
+      213: 2520616970096509114
+    second: TilleMap_City_Road07
+  - first:
+      213: -1166320494866902706
+    second: TilleMap_City_Road08
+  - first:
+      213: 6217659258252967218
+    second: TilleMap_City_Grass09
+  - first:
+      213: -7419963929490919979
+    second: TilleMap_City_Grass10
+  - first:
+      213: 8986339689942830196
+    second: TilleMap_City_Grass13
+  - first:
+      213: -7667205379086113194
+    second: TilleMap_City_dirt09
+  - first:
+      213: -1068989907981007590
+    second: TilleMap_City_dirt10
+  - first:
+      213: 7114046399382587085
+    second: TilleMap_City_dirt13
+  - first:
+      213: 1197026980469821276
+    second: TilleMap_City_Road09
+  - first:
+      213: -1237709302172080494
+    second: TilleMap_City_Road10
+  - first:
+      213: 5777178989651153926
+    second: TilleMap_City_Road13
+  - first:
+      213: -4926924656458966377
+    second: TilleMap_City_Grass11
+  - first:
+      213: -5957109723260822701
+    second: TilleMap_City_Grass12
+  - first:
+      213: 6595663193144023201
+    second: TilleMap_City_Grass14
+  - first:
+      213: 8585357870302444200
+    second: TilleMap_City_dirt11
+  - first:
+      213: -3256506522766279187
+    second: TilleMap_City_dirt12
+  - first:
+      213: 2704061685195442970
+    second: TilleMap_City_dirt14
+  - first:
+      213: 982048764560391005
+    second: TilleMap_City_Road111
+  - first:
+      213: 3844271746577768345
+    second: TilleMap_City_Road12
+  - first:
+      213: -4575304078290445157
+    second: TilleMap_City_Road14
+  - first:
+      213: -7475760740887401924
+    second: TilleMap_City_Tille01
+  - first:
+      213: 1275641680491098208
+    second: TilleMap_City_Tille02
+  - first:
+      213: -8012336640212526078
+    second: TilleMap_City_Tille03
+  - first:
+      213: 7908424992432357659
+    second: TilleMap_City_48
+  - first:
+      213: 6045591006532687931
+    second: TilleMap_City_Road15
+  - first:
+      213: -3326560615070784206
+    second: TilleMap_City_Road16
+  - first:
+      213: -8368070598358517763
+    second: TilleMap_City_Road17
+  - first:
+      213: 6413826638411353505
+    second: TilleMap_City_Road18
+  - first:
+      213: 6585587768474647959
+    second: TilleMap_City_Road19
+  - first:
+      213: -1831751465075044969
+    second: TilleMap_City_Tille04
+  - first:
+      213: 6336629241105315676
+    second: TilleMap_City_55
+  - first:
+      213: 647314217084348717
+    second: TilleMap_City_Tille05
+  - first:
+      213: -1078372351728622623
+    second: TilleMap_City_57
+  - first:
+      213: 6978298891446761851
+    second: TilleMap_City_Road00
+  - first:
+      213: -7169952558032539065
+    second: TilleMap_City_Road21
+  - first:
+      213: 4668560065864862900
+    second: TilleMap_City_Road22
+  - first:
+      213: -8154985388383031928
+    second: TilleMap_City_Road23
+  - first:
+      213: 6759392789853436611
+    second: TilleMap_City_Road20
+  - first:
+      213: 1948673736121828970
+    second: TilleMap_City_Tille06
+  - first:
+      213: -1913393038835564208
+    second: TilleMap_City_Tille07
+  - first:
+      213: 5435709047182853303
+    second: TilleMap_City_Tille08
+  - first:
+      213: 173679726630787405
+    second: TilleMap_City_Tille09
+  - first:
+      213: -302460976409458477
+    second: TilleMap_City_Tille10
+  - first:
+      213: -2718893261067035960
+    second: TilleMap_City_68
+  - first:
+      213: 4024281709185362770
+    second: TilleMap_City_69
+  - first:
+      213: -8703417072752562949
+    second: TilleMap_City_70
+  - first:
+      213: 2952455059042150841
+    second: TilleMap_City_71
+  - first:
+      213: 6194757836687353273
+    second: TilleMap_City_Tille00
+  - first:
+      213: -2131224234556785661
+    second: TilleMap_City_Tille13
+  - first:
+      213: 3531024340538558063
+    second: TilleMap_City_Tille14
+  - first:
+      213: 4796562829381044885
+    second: TilleMap_City_Tille11
+  - first:
+      213: 9204189935997605421
+    second: TilleMap_City_Tille12
+  - first:
+      213: -1152497232790807895
+    second: TilleMap_City_77
+  - first:
+      213: 8553601509037821854
+    second: TilleMap_City_78
+  - first:
+      213: 5308635058856525521
+    second: TilleMap_City_79
+  - first:
+      213: -4935379417468984
+    second: TilleMap_City_80
+  - first:
+      213: -5949312547753243109
+    second: TilleMap_City_0
+  - first:
+      213: -181624918617192289
+    second: TilleMap_City_1
+  - first:
+      213: -5369552168770603724
+    second: TilleMap_City_2
+  - first:
+      213: 9034911511401632188
+    second: TilleMap_City_3
+  - first:
+      213: -6040581726661036661
+    second: TilleMap_City_4
+  - first:
+      213: -2287766880653078780
+    second: TilleMap_City_5
+  - first:
+      213: 8594062284742599907
+    second: TilleMap_City_6
+  - first:
+      213: 6959473668438600154
+    second: TilleMap_City_7
+  - first:
+      213: -9187045352016178634
+    second: TilleMap_City_8
+  - first:
+      213: -3299351168693595828
+    second: TilleMap_City_9
+  - first:
+      213: -2343738525075850899
+    second: TilleMap_City_10
+  - first:
+      213: -7834055385384348622
+    second: TilleMap_City_11
+  - first:
+      213: 9100065404508442787
+    second: TilleMap_City_12
+  - first:
+      213: -376759112005370373
+    second: TilleMap_City_13
+  - first:
+      213: -5722646539843600270
+    second: TilleMap_City_14
+  - first:
+      213: -6897242835147858113
+    second: TilleMap_City_15
+  - first:
+      213: 5081392135734534501
+    second: TilleMap_City_16
+  - first:
+      213: -5992382570447398614
+    second: TilleMap_City_17
+  - first:
+      213: -3614322955112787681
+    second: TilleMap_City_18
+  - first:
+      213: 2744121301652070754
+    second: TilleMap_City_19
+  - first:
+      213: 848412724687071660
+    second: TilleMap_City_20
+  - first:
+      213: 2644456674039564519
+    second: TilleMap_City_21
+  - first:
+      213: 8776469284588727083
+    second: TilleMap_City_22
+  - first:
+      213: -4559459673869530493
+    second: TilleMap_City_23
+  - first:
+      213: 1265056411492570087
+    second: TilleMap_City_24
+  - first:
+      213: 2520616970096509114
+    second: TilleMap_City_25
+  - first:
+      213: -1166320494866902706
+    second: TilleMap_City_26
+  - first:
+      213: 6217659258252967218
+    second: TilleMap_City_27
+  - first:
+      213: -7419963929490919979
+    second: TilleMap_City_28
+  - first:
+      213: 8986339689942830196
+    second: TilleMap_City_29
+  - first:
+      213: -7667205379086113194
+    second: TilleMap_City_30
+  - first:
+      213: -1068989907981007590
+    second: TilleMap_City_31
+  - first:
+      213: 7114046399382587085
+    second: TilleMap_City_32
+  - first:
+      213: 1197026980469821276
+    second: TilleMap_City_33
+  - first:
+      213: -1237709302172080494
+    second: TilleMap_City_34
+  - first:
+      213: 5777178989651153926
+    second: TilleMap_City_35
+  - first:
+      213: -4926924656458966377
+    second: TilleMap_City_36
+  - first:
+      213: -5957109723260822701
+    second: TilleMap_City_37
+  - first:
+      213: 6595663193144023201
+    second: TilleMap_City_38
+  - first:
+      213: 8585357870302444200
+    second: TilleMap_City_39
+  - first:
+      213: -3256506522766279187
+    second: TilleMap_City_40
+  - first:
+      213: 2704061685195442970
+    second: TilleMap_City_41
+  - first:
+      213: 982048764560391005
+    second: TilleMap_City_42
+  - first:
+      213: 3844271746577768345
+    second: TilleMap_City_43
+  - first:
+      213: -4575304078290445157
+    second: TilleMap_City_44
+  - first:
+      213: 6045591006532687931
+    second: TilleMap_City_49
+  - first:
+      213: -3326560615070784206
+    second: TilleMap_City_50
+  - first:
+      213: -8368070598358517763
+    second: TilleMap_City_51
+  - first:
+      213: 6413826638411353505
+    second: TilleMap_City_52
+  - first:
+      213: 6585587768474647959
+    second: TilleMap_City_53
+  - first:
+      213: 6978298891446761851
+    second: TilleMap_City_58
+  - first:
+      213: -7169952558032539065
+    second: TilleMap_City_59
+  - first:
+      213: 4668560065864862900
+    second: TilleMap_City_60
+  - first:
+      213: -8154985388383031928
+    second: TilleMap_City_61
+  - first:
+      213: 6759392789853436611
+    second: TilleMap_City_62
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 256
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TilleMap_City_Road01
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 2048
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e42aab5d1e344770800000000000000
+      internalID: 8594062284742599907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilleMap_City_Grass01
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2048
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1ec46532cbcf6da0800000000000000
+      internalID: -5949312547753243109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilleMap_City_Grass02
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 2048
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f98867b491dba7df0800000000000000
+      internalID: -181624918617192289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilleMap_City_Grass03
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 2048
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 435ff7960c48b75b0800000000000000
+      internalID: -5369552168770603724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilleMap_City_dirt01
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 2048
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb19e2e8624726d70800000000000000
+      internalID: 9034911511401632188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilleMap_City_dirt02
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 2048
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8537a98cea8b2ca0800000000000000
+      internalID: -6040581726661036661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilleMap_City_dirt03
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 2048
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40f05c5a4283040e0800000000000000
+      internalID: -2287766880653078780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilleMap_City_Road02
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 2048
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad9a7f6bd64059060800000000000000
+      internalID: 6959473668438600154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilleMap_City_Road03
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 2048
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6321ca96dee018080800000000000000
+      internalID: -9187045352016178634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilleMap_City_Grass04
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1792
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9c434a12bccc2d80800000000000000
+      internalID: -8274013350069580643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilleMap_City_dirt00
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1792
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14f7214d87bd37960800000000000000
+      internalID: 7598658308304699201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilleMap_City_Grass05
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1792
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70dc2796d65c28dc0800000000000000
+      internalID: -3638128475250701049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilleMap_City_dirt04
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1792
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dbc78d673bd50bb0800000000000000
+      internalID: -4970325582626174000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilleMap_City_Grass00
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1792
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0830791576eb93a0800000000000000
+      internalID: -6657474233524799478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilleMap_City_dirt05
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1792
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25109090ac14a1bb0800000000000000
+      internalID: -4964583303231766190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilleMap_City_Road04
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1792
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05247651e526ea740800000000000000
+      internalID: 5165173978866074192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilleMap_City_Road24
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 1792
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7fafa0ece3fbea90800000000000000
+      internalID: -7283459773634203777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilleMap_City_Road05
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 1792
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50599de21e3aada10800000000000000
+      internalID: 1935039177458029829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilleMap_City_Grass06
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1536
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb59073f0afa089c0800000000000000
+      internalID: -3926945769253202501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilleMap_City_Grass07
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1536
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fdc668f72d522a60800000000000000
+      internalID: 7647777543481118198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilleMap_City_Grass08
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1536
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21c733f686958d2d0800000000000000
+      internalID: -3253752425698067438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilleMap_City_dirt06
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1536
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 735a68b6082280720800000000000000
+      internalID: 2812535902248019255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilleMap_City_dirt07
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1536
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 794c9c451de0569d0800000000000000
+      internalID: -2781800902597950313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilleMap_City_dirt08
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1536
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe8901c30bfba1520800000000000000
+      internalID: 2673660092440680687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilleMap_City_Road06
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1536
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bcb27abc8ab460c0800000000000000
+      internalID: -4583333407170052942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilleMap_City_Road07
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 1536
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7de1ec8fb12b2860800000000000000
+      internalID: 7506130310529150334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilleMap_City_Road08
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 1536
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf1060db87e2515b0800000000000000
+      internalID: -5398357482231430660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilleMap_City_Grass09
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1280
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c08a7a97660a94120800000000000000
+      internalID: 2398624638539638796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilleMap_City_Grass10
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1280
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cf696e4c3d35e960800000000000000
+      internalID: 7630572472872038340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilleMap_City_Grass13
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1280
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c05028de5e3cc83a0800000000000000
+      internalID: -6661734356488157940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilleMap_City_dirt09
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1280
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a94fcd488fc7dac90800000000000000
+      internalID: -7156926825999043430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilleMap_City_dirt10
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1280
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62905ab73f1bc1d00800000000000000
+      internalID: 944825681150544166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilleMap_City_dirt13
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1280
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44046d1b724042930800000000000000
+      internalID: 4117420527857320004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilleMap_City_Road09
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1280
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be975fa33e0c2e750800000000000000
+      internalID: 6332836108215613931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilleMap_City_Road10
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 1280
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7f451db8b300b370800000000000000
+      internalID: 8336167002243944319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilleMap_City_Road13
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 1280
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3e271062f6d2c370800000000000000
+      internalID: 8341465796326141498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilleMap_City_Grass11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1024
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1451a5763ad01b070800000000000000
+      internalID: 8120286598590502209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilleMap_City_Grass12
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1024
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5571f425a66fda5d0800000000000000
+      internalID: -3049510436152076459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilleMap_City_Grass14
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 1024
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d677f729062d7fd50800000000000000
+      internalID: 6771111876991350637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilleMap_City_dirt11
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1024
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 177b3c3bf123f2190800000000000000
+      internalID: -7985108502563276943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilleMap_City_dirt12
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1024
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b2f303e94fd9ac70800000000000000
+      internalID: 8982956440201458358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilleMap_City_dirt14
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1024
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56d0b16314f112290800000000000000
+      internalID: -7917012304999543451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilleMap_City_Road111
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1024
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70be0fa7794099f70800000000000000
+      internalID: 9194385162902760199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilleMap_City_Road12
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 1024
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7fb20c467c5bf500800000000000000
+      internalID: 431039852495159163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilleMap_City_Road14
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 1024
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c84b70e0f1be55d80800000000000000
+      internalID: -8262439422729407348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilleMap_City_Tille01
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 768
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c984853d1668c880800000000000000
+      internalID: -8590504013571257917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilleMap_City_Tille02
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 768
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f85d4c4dc26eb520800000000000000
+      internalID: 2719719858866313462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilleMap_City_Tille03
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 771
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b92ec22bc9f2a790800000000000000
+      internalID: -7520173776897693257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilleMap_City_48
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 768
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68278721766738e30800000000000000
+      internalID: 4504574237364220550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilleMap_City_Road15
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 768
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2723827ce2cc6b000800000000000000
+      internalID: 51452947043201650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilleMap_City_Road16
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 768
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c481067bcbb4d040800000000000000
+      internalID: 4671565196022613184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilleMap_City_Road17
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 768
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbdd668da5ead55c0800000000000000
+      internalID: -4225029170202747461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilleMap_City_Road18
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 768
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e062939b4bb798b0800000000000000
+      internalID: -5145438115974717212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilleMap_City_Road19
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 768
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f49271115f9a9f590800000000000000
+      internalID: -7639888422838523569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilleMap_City_Tille04
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 512
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f77776acf912d950800000000000000
+      internalID: 6472264187400124402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilleMap_City_55
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 512
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8846b95f3ef1fa4a0800000000000000
+      internalID: -6580005466626366328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilleMap_City_Tille05
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 512
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5b3a5889927fbe70800000000000000
+      internalID: 9133144573073832795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilleMap_City_57
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 512
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ae22836c1e278f20800000000000000
+      internalID: 3424756741101989544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilleMap_City_Road00
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 512
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dde45a08a1d0c900800000000000000
+      internalID: 702792061527846360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilleMap_City_Road21
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 512
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ab2473fd11b13240800000000000000
+      internalID: 4769788222558710691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilleMap_City_Road22
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 512
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbbc2ca6e23f80e80800000000000000
+      internalID: -8212046539824903236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilleMap_City_Road23
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 512
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 691f2a6373fe0e140800000000000000
+      internalID: 4747057027667390870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilleMap_City_Road20
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 512
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6580d7c22823f0410800000000000000
+      internalID: 1445429540082747478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilleMap_City_Tille06
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf47072e0e07eb700800000000000000
+      internalID: 558007515014526204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilleMap_City_Tille07
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 256
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9626956ebc863400800000000000000
+      internalID: 303584774270101146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilleMap_City_Tille08
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 256
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66756e135ef3266f0800000000000000
+      internalID: -692921139044395162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilleMap_City_Tille09
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 256
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b24127f8c35932bb0800000000000000
+      internalID: -4961958277094960085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilleMap_City_Tille10
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 256
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a218fe5f7b6c79c0800000000000000
+      internalID: -3928146580175580508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilleMap_City_68
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 256
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff1ae53e301440b20800000000000000
+      internalID: 3099673928493081087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilleMap_City_69
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 256
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba1480d35bc2dfeb0800000000000000
+      internalID: -4684538880470793813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilleMap_City_70
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 256
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f8a2a83f07444790800000000000000
+      internalID: -7546828944865842956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilleMap_City_71
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 256
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64caa22020f3b7ea0800000000000000
+      internalID: -5874032011115844538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilleMap_City_Tille00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d8b3f559ef11b5b0800000000000000
+      internalID: -5354463394936932135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilleMap_City_Tille13
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ec74e3ee2a13e320800000000000000
+      internalID: 2585939399735016679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilleMap_City_Tille14
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 115a38fa7d3e187f0800000000000000
+      internalID: -611957558843562735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilleMap_City_Tille11
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ecd5a808cd4383c0800000000000000
+      internalID: -4358554492830622492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilleMap_City_Tille12
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17880a26a881100f0800000000000000
+      internalID: -1152613046990894991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilleMap_City_77
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93a2d61ff96065320800000000000000
+      internalID: 2546229923344624185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilleMap_City_78
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c53af594f946c8b90800000000000000
+      internalID: -7238299865797647524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilleMap_City_79
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9435f41ce11d2a210800000000000000
+      internalID: 1342865568932254537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilleMap_City_80
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd92fb6ace378b030800000000000000
+      internalID: 3510683369782323677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 267dfbf484672c14dae098275b0671e1
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
