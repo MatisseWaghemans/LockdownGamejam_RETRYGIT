@@ -179,6 +179,12 @@ MonoBehaviour:
   _force: 20
   _bulletSpawn: {fileID: 3089283714399440192}
   character: {fileID: 1567688146062323086}
+  _clips:
+  - {fileID: 8300000, guid: 9abbb8dc471c41d4490d0917be5871d8, type: 3}
+  - {fileID: 8300000, guid: eb2f837c56134534a8cd5e1695afcd87, type: 3}
+  - {fileID: 8300000, guid: 1a7f0118727fca24bbdfa7453cb27a85, type: 3}
+  - {fileID: 8300000, guid: 86769f2109e182040b449d8fc5ab6db6, type: 3}
+  - {fileID: 8300000, guid: 4154575863aee09409bcf93a8dbfc1db, type: 3}
 --- !u!61 &1567688146341985703
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -218,7 +224,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: b09584e76aa454547a9ed8a4c8941c74, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
-  m_Pitch: 2
+  m_Pitch: 1
   Loop: 0
   Mute: 0
   Spatialize: 0

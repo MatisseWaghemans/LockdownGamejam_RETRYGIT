@@ -7,7 +7,6 @@ public class CameraScriptWard : MonoBehaviour
     [SerializeField] private Generator _generator;
     [SerializeField] private float  LerpValue;
 
-
     private void FixedUpdate()
   {
     Vector3 position = _generator._roomPositionList[_generator.CurrentRoom];

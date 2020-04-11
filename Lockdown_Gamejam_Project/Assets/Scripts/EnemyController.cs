@@ -12,7 +12,7 @@ public class EnemyController : MonoBehaviour
     private GameObject _player;
     private float _timer;
     private bool _hasShot = true;
-    private bool _isHit;
+    public bool _isHit;
     [SerializeField] private List<AudioClip> _clips = new List<AudioClip>(4);
     // Start is called before the first frame update
     void Start()
@@ -124,8 +124,11 @@ public class EnemyController : MonoBehaviour
     }
     public void Hit()
     {
+        if(!_isHit)
+        {
         GetComponent<AudioSource>().clip = _clips[Random.Range(0,5)];
         GetComponent<AudioSource>().Play();
+        }
         _isHit = true;
     }
 }
