@@ -9,8 +9,6 @@ public class Flock : MonoBehaviour
     List<Agent> agents = new List<Agent>();
     public Behaviour behaviour;
 
-    [Range(10, 500)]
-    public int startingCount = 250;
     const float AgentDensity = 2f;
 
     [Range(1f, 100f)]
@@ -36,19 +34,20 @@ public class Flock : MonoBehaviour
         squareMaxSpeed = MaxSpeed * MaxSpeed;
         squareNeighborRadius = neighborRadius * neighborRadius;
         squareAvoidanceRadius = squareNeighborRadius * avoidanceRadiusMultiplier * avoidanceRadiusMultiplier;
-
-        for (int i = 0; i < startingCount; i++)
-        {
-            Agent newAgent = Instantiate(
-                agentPrefab,
-                UnityEngine.Random.insideUnitCircle * startingCount * AgentDensity,
-                Quaternion.Euler(Vector3.forward * UnityEngine.Random.Range(0f, 360f)),
-                transform
-                );
-            newAgent.name = "Agent " + i;
-            agents.Add(newAgent);
-        }
+       //
+       // {
+       //     Agent newAgent = Instantiate(
+       //         agentPrefab,
+       //         UnityEngine.Random.insideUnitCircle  * AgentDensity,
+       //         Quaternion.Euler(Vector3.forward * UnityEngine.Random.Range(0f, 360f)),
+       //         transform
+       //         );
+       //     newAgent.name = "Agent " + i;
+       //     agents.Add(newAgent);
+       // }
     }
+
+    
 
     // Update is called once per frame
     void Update()
