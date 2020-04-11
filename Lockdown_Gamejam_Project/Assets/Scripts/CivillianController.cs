@@ -15,7 +15,7 @@ public class CivillianController : MonoBehaviour
     [SerializeField] private float Frequency = 2f;
     private Vector3 _position;
     private float _radius = 2;
-    [SerializeField] private List<AudioClip> _clips = new List<AudioClip>(3);
+    [SerializeField] private List<AudioClip> _clips = new List<AudioClip>(4);
 
     // Start is called before the first frame update
     void Start()
@@ -60,7 +60,7 @@ public class CivillianController : MonoBehaviour
         if(!_hasPosition)
         {
             _player._followers.Add(gameObject);
-            GetComponent<AudioSource>().clip = _clips[Random.Range(0,3)];
+            GetComponent<AudioSource>().clip = _clips[Random.Range(0,4)];
             GetComponent<AudioSource>().Play();
             _position = new Vector3((Random.insideUnitCircle.x*_radius),(Random.insideUnitCircle.y*_radius),0);
             _hasPosition = true;
