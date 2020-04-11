@@ -40,8 +40,7 @@ public class CivillianController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-         _randomPos = _beginPos +new Vector3((Random.insideUnitCircle*5).x,(Random.insideUnitCircle*5).y,0);
-        Debug.Log(_rb.velocity);
+         _randomPos = _beginPos +new Vector3((Random.insideUnitCircle*_radius).x,(Random.insideUnitCircle*_radius).y,0);
         _rb.velocity = Vector2.one * _speed * Time.deltaTime;
         _player = FindObjectOfType<PlayerMovement>();
         if(!_isHit)
@@ -83,7 +82,7 @@ public class CivillianController : MonoBehaviour
             _player._followers.Add(gameObject);
             GetComponent<AudioSource>().clip = _clips[Random.Range(0,4)];
             GetComponent<AudioSource>().Play();
-            _position = _beginPos +new Vector3((Random.insideUnitCircle.x*_radius),(Random.insideUnitCircle.y*_radius),0);
+            _position = _player.transform.position +new Vector3((Random.insideUnitCircle.x*_radius),(Random.insideUnitCircle.y*_radius),0);
             _hasPosition = true;
         }
         if(Vector3.Distance(transform.transform.position, _position)>_radius-0.2f)
