@@ -22,7 +22,7 @@ public class CivillianController : MonoBehaviour
     private SpriteRenderer _spriteRenderer;
     private Rigidbody2D _rb;
 
-    [SerializeField] private float _speed = 1f;
+    [SerializeField] private float _speed = 0.01f;
     [SerializeField]private RoomTriggerScript _rooms;
     
 
@@ -59,7 +59,7 @@ public class CivillianController : MonoBehaviour
             if(distance<1)
             {
                 _moving = false;
-                _randomPos = _beginPos +new Vector3((Random.insideUnitCircle*10).x,(Random.insideUnitCircle*10).y,0);
+                _randomPos = _beginPos +new Vector3((Random.insideUnitCircle*5).x,(Random.insideUnitCircle*5).y,0);
                 _moving = true;
             }
         }
