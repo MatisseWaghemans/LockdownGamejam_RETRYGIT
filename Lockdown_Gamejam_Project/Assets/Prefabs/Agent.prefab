@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 4218735380739443951}
   - component: {fileID: 1117581047098975991}
   - component: {fileID: 7446582288102933031}
-  m_Layer: 0
+  - component: {fileID: 3808843644811146185}
+  m_Layer: 14
   m_Name: Agent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48,7 +49,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 1
+  m_Radius: 0.63
 --- !u!114 &7446582288102933031
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -61,6 +62,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f33cbbf64a32414697d1d80470dd451, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!50 &3808843644811146185
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4218735380739443946}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &4218735381929268746
 GameObject:
   m_ObjectHideFlags: 0
@@ -73,7 +95,7 @@ GameObject:
   - component: {fileID: 4218735381929268751}
   - component: {fileID: 8308440682912700145}
   - component: {fileID: 2990231306590935943}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}

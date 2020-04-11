@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "Flock/Behavior/Avoidance")]
-public class Avoidance : Behaviour
+public class Avoidance : FilteredFlockBehaviour
 {
     Vector2 currentVelocity;
     public float agentSmoothTime = 0.5f;
@@ -13,6 +13,8 @@ public class Avoidance : Behaviour
         Vector2 avoidanceMove = Vector2.zero;
 
         int nAvoid = 0;
+
+
         float calc = Vector2.SqrMagnitude(playerTransform.position - agent.transform.position);
         if (calc < flock.SquareAvoidanceRadius)
         {
@@ -24,13 +26,20 @@ public class Avoidance : Behaviour
         if (context.Count == 0)
             return avoidanceMove;
 
-        foreach (Transform item in context)
+
+        List<Transform> filteredContext = (filter == null) ? context : filter.Filter(agent, context);
+
+        foreach (Transform item in filteredContext)
         {
-            if (Vector2.SqrMagnitude(item.position - agent.transform.position) < flock.SquareAvoidanceRadius)
+            if (Vector2.SqrMagnitude(item.position - agent.transform.position) < flock.SquareAvoidanceRadius * 5)
             {
+
+                Debug.Log(item.gameObject.name);
+
                 nAvoid++;
                 avoidanceMove += (Vector2)(agent.transform.position - item.position);
             }
+
         }
 
         if (nAvoid > 0)

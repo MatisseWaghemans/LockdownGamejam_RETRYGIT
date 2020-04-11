@@ -10,10 +10,14 @@ public class Agent : MonoBehaviour
     private bool _isFilpped = false;
     public Collider2D AgentCollider { get { return agentCollider; } }
 
+
+    Rigidbody2D rb;
     // Start is called before the first frame update
     void Start()
     {
+        rb = GetComponent<Rigidbody2D>();
         agentCollider = GetComponent<Collider2D>();
+        // agentCollider = GetComponent<Collider2D>();
     }
 
 
@@ -26,7 +30,9 @@ public class Agent : MonoBehaviour
         transform.forward = velocity;
         // transform.position += (Vector3)velocity * Time.deltaTime;
 
-        transform.position = Vector3.Lerp(transform.position, transform.position + (Vector3)velocity * Time.deltaTime, 0.5f);
+        // transform.position = Vector3.Lerp(transform.position, transform.position + (Vector3)velocity * Time.deltaTime, 0.5f);
+
+        rb.MovePosition(transform.position + (Vector3)velocity * Time.deltaTime);
 
         //  if (_isFilpped && velocity.x > 0)
         //  {

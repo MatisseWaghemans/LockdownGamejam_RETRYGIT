@@ -79,6 +79,7 @@ public class Flock : MonoBehaviour
 
         foreach (Collider2D c in contextColliders)
         {
+
             if (c != agent.AgentCollider)
             {
                 context.Add(c.transform);
