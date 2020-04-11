@@ -99,6 +99,8 @@ public class CivillianController : MonoBehaviour
         _spriteRenderer.sprite = _hitSprite;
         FindObjectOfType<Flock>().agents.Add(GetComponent<Agent>());
         GetComponentInChildren<SpriteFlock>().isEnabled = true;
+        GetComponent<AudioSource>().clip = _clips[Random.Range(0,4)];
+        GetComponent<AudioSource>().Play();
         gameObject.layer = 14;
         transform.GetChild(0).gameObject.layer = 14;
         _isHit = true;
