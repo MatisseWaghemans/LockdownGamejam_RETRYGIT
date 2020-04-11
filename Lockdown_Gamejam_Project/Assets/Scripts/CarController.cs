@@ -20,8 +20,15 @@ public class CarController : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
+        if(Camera.main.WorldToViewportPoint(transform.position).x>1||Camera.main.WorldToViewportPoint(transform.position).x<0)
+        {
+        transform.position = _beginPos;
+        if(_isStalinCar){
+            Destroy(gameObject);
+        }
+        }
         if(!_moveLeft){
             if(_isStalinCar)
             {

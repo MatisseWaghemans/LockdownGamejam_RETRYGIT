@@ -15,13 +15,13 @@ public class CivillianController : MonoBehaviour
     [SerializeField] private float Frequency = 2f;
     private Vector3 _position;
     private float _radius = 2;
+    [SerializeField] private List<AudioClip> _clips = new List<AudioClip>(3);
 
     // Start is called before the first frame update
     void Start()
     {
         _player = FindObjectOfType<PlayerMovement>();
         _randomPos = new Vector3(Random.insideUnitCircle.x*10,Random.insideUnitCircle.y*10,0);
-        Debug.Log(_randomPos);
     }
 
     // Update is called once per frame
@@ -40,7 +40,6 @@ public class CivillianController : MonoBehaviour
         {
             _moving = false;
             _randomPos =Random.insideUnitCircle*10;
-            Debug.Log(_randomPos);
             _moving = true;
         }
         }
@@ -61,6 +60,8 @@ public class CivillianController : MonoBehaviour
         if(!_hasPosition)
         {
             _player._followers.Add(gameObject);
+            GetComponent<AudioSource>().clip = _clips[Random.Range(0,3)];
+            GetComponent<AudioSource>().Play();
             _position = new Vector3((Random.insideUnitCircle.x*_radius),(Random.insideUnitCircle.y*_radius),0);
             _hasPosition = true;
         }

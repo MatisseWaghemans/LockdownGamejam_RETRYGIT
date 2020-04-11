@@ -19,9 +19,17 @@ public class NotesBehavior : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(Camera.main.WorldToViewportPoint(transform.position).x>1||Camera.main.WorldToViewportPoint(transform.position).x<0)
+        {
+            Destroy(gameObject);
+        }
+        if(Camera.main.WorldToViewportPoint(transform.position).y>1||Camera.main.WorldToViewportPoint(transform.position).y<0)
+        {
+            Destroy(gameObject);
+        }
         transform.localScale += new Vector3(0,0.02f,0);
     }
-    void OnCollisionEnter2D(Collision2D other)
+        void OnTriggerEnter2D(Collider2D other)
     {
         if(other.gameObject.tag =="Enemy")
         {
@@ -30,10 +38,21 @@ public class NotesBehavior : MonoBehaviour
         }
         if(other.gameObject.tag =="Civillian")
         {
+            // if(other.transform.parent.CompareTag("Player"))
+            if(other.transform.parent!=null)
+            {
+                return;
+            }
+            else{    
             other.gameObject.GetComponent<CivillianController>().Hit();
-            other.collider.isTrigger = true;
+            other.isTrigger = true;
+            Destroy(this.gameObject);
+            }
+        }
+        if(other.gameObject.tag =="Prop")
+        {
             Destroy(this.gameObject);
         }
-        Destroy(this.gameObject);
     }
+
 }

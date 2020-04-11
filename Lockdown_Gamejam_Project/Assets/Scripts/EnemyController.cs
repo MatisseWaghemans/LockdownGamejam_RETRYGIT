@@ -16,12 +16,18 @@ public class EnemyController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        _player = FindObjectOfType<PlayerMovement>().gameObject;
+
     }
 
     // Update is called once per frame
     void Update()
     {
+        if(FindObjectOfType<PlayerMovement>()==null)
+        {
+            return;
+        }
+        _player = FindObjectOfType<PlayerMovement>().gameObject;
+        
         if(!_isHit)
         {
         float distance = Vector3.Distance(transform.position,_player.transform.position);
@@ -32,6 +38,7 @@ public class EnemyController : MonoBehaviour
             MoveGun();
             if(_timer>3)
             {
+                GetComponent<AudioSource>().Play();
                 ShootPlayer();
                 _timer=0;
             }
@@ -41,6 +48,7 @@ public class EnemyController : MonoBehaviour
         {
             Destroy(_gun);
         }
+        
     }
     void ShootPlayer()
     {
