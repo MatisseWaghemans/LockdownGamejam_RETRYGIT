@@ -26,7 +26,7 @@ public class BulletController : MonoBehaviour
     {
         if(collider.tag =="Civillian")
         {
-            Destroy(collider.gameObject);
+            collider.GetComponent<CivillianController>().HitBullet();
             Destroy(gameObject);
         }
         if(collider.tag =="Prop")
