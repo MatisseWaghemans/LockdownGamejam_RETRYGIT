@@ -47,17 +47,19 @@ MonoBehaviour:
   SpawnRooms:
   - {fileID: 7419063468668511210, guid: def164cfd15de8d4da823cd64899a027, type: 3}
   - {fileID: 7419063468668511210, guid: 104557ba3296a54469292bea9f14d13e, type: 3}
-  - {fileID: 7419063468668511210, guid: def164cfd15de8d4da823cd64899a027, type: 3}
-  - {fileID: 7419063468668511210, guid: 104557ba3296a54469292bea9f14d13e, type: 3}
+  - {fileID: 7419063468668511210, guid: 9096dc0ba20b2ab4b918ce9eedcb52b5, type: 3}
+  - {fileID: 7419063468668511210, guid: fd1d301e32ed21847bd2088217a32b3c, type: 3}
   EndRooms:
   - {fileID: 7419063468668511210, guid: def164cfd15de8d4da823cd64899a027, type: 3}
   - {fileID: 7419063468668511210, guid: 104557ba3296a54469292bea9f14d13e, type: 3}
-  - {fileID: 7419063468668511210, guid: def164cfd15de8d4da823cd64899a027, type: 3}
-  - {fileID: 7419063468668511210, guid: 104557ba3296a54469292bea9f14d13e, type: 3}
+  - {fileID: 7419063468668511210, guid: 9096dc0ba20b2ab4b918ce9eedcb52b5, type: 3}
+  - {fileID: 7419063468668511210, guid: fd1d301e32ed21847bd2088217a32b3c, type: 3}
   HorizontalRooms:
   - {fileID: 7419063468668511210, guid: 6f58c534d4c1da54797c43e6a34bc6cc, type: 3}
+  - {fileID: 7419063468668511210, guid: 1071260ceb77fef469cb12dfd306501c, type: 3}
   VerticalRooms:
   - {fileID: 7419063468668511210, guid: f8a2e0ac52706664dac1ce6db5de302b, type: 3}
+  - {fileID: 7419063468668511210, guid: e062d746c50fa02448736236f962a4f2, type: 3}
   LWayRightTopRooms:
   - {fileID: 7419063468668511210, guid: dfcfc8db57c8fbb4dafbee75919ffca9, type: 3}
   LWayRightBottomRooms:
