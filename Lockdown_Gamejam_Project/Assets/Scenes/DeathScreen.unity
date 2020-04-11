@@ -2330,6 +2330,8 @@ MonoBehaviour:
   ladaAnimator: {fileID: 0}
   playerAnimator: {fileID: 0}
   vignetteAnimator: {fileID: 0}
+  VictoryScreen: {fileID: 0}
+  ScoreScreen: {fileID: 0}
   UIfunctions: {fileID: 0}
 --- !u!1 &1637594730
 GameObject:
@@ -2364,6 +2366,8 @@ MonoBehaviour:
   ladaAnimator: {fileID: 0}
   playerAnimator: {fileID: 0}
   vignetteAnimator: {fileID: 1895836583}
+  VictoryScreen: {fileID: 0}
+  ScoreScreen: {fileID: 0}
   UIfunctions: {fileID: 0}
 --- !u!4 &1637594732
 Transform:
@@ -3069,7 +3073,7 @@ MonoBehaviour:
   priority: 0
   blendDistance: 0
   weight: 1
-  sharedProfile: {fileID: 11400000, guid: abe520feda0f40c4e9d76a922c36b938, type: 2}
+  sharedProfile: {fileID: 11400000, guid: 6eedd90576a678544943d27d3554eac4, type: 2}
 --- !u!95 &1835126954
 Animator:
   serializedVersion: 3
