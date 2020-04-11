@@ -8,6 +8,7 @@ TagManager:
   - Civillian
   - Wall
   - Prop
+  - Agent
   layers:
   - Default
   - TransparentFX

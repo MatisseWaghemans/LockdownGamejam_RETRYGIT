@@ -87,7 +87,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -8605556646268389980, guid: ba73f48ca30a64a47902bbad9499855f,
+  m_Sprite: {fileID: -1216627175085383403, guid: ba73f48ca30a64a47902bbad9499855f,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -138,7 +138,6 @@ GameObject:
   - component: {fileID: 1878334358286104562}
   - component: {fileID: 1660943603488487257}
   - component: {fileID: 852798708967241197}
-  - component: {fileID: 6488987664036335304}
   m_Layer: 10
   m_Name: FemalePassenger
   m_TagString: Civillian
@@ -327,15 +326,3 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &6488987664036335304
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1878334358286104561}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f33cbbf64a32414697d1d80470dd451, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

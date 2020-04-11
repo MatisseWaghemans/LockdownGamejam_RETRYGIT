@@ -27,11 +27,12 @@ public class Flock : MonoBehaviour
     float squareAvoidanceRadius;
     public float SquareAvoidanceRadius { get { return squareAvoidanceRadius; } }
 
-    [SerializeField] Transform playerTransform;
+    public Transform playerTransform;
 
     // Start is called before the first frame update
     void Start()
     {
+        
         squareMaxSpeed = MaxSpeed * MaxSpeed;
         squareNeighborRadius = neighborRadius * neighborRadius;
         squareAvoidanceRadius = squareNeighborRadius * avoidanceRadiusMultiplier * avoidanceRadiusMultiplier;
@@ -56,7 +57,7 @@ public class Flock : MonoBehaviour
         Agent newAgent = Instantiate(
             agentPrefab,
             position,
-            Quaternion.Euler(Vector3.forward * UnityEngine.Random.Range(0f, 360f)),
+            Quaternion.Euler(0,0,0),
             transform
             );
         newAgent.name = "Agent " + agents.Count;
@@ -67,6 +68,11 @@ public class Flock : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(FindObjectOfType<PlayerMovement>()==null)
+        {
+            return;
+        }
+        playerTransform = FindObjectOfType<PlayerMovement>().transform;
         foreach(Agent agent in agents)
         {
             List<Transform> context = GetNearbyObjects(agent);

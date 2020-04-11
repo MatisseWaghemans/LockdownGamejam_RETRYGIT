@@ -26,7 +26,6 @@ public class BulletController : MonoBehaviour
     {
         if(collider.tag =="Civillian")
         {
-            collider.GetComponent<CivillianController>().HitBullet();
             Destroy(gameObject);
         }
         if(collider.tag =="Prop")
@@ -40,6 +39,11 @@ public class BulletController : MonoBehaviour
             }
             collider.GetComponent<PlayerMovement>().Die();
             Destroy(gameObject);
+        }
+        if(collider.gameObject.tag =="Agent")
+        {
+            Destroy(collider.gameObject);
+            Destroy(this.gameObject);
         }
     }
 }

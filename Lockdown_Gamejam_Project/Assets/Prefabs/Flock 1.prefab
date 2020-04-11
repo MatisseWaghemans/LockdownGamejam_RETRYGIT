@@ -40,15 +40,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 8077564444359752601}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 792b9c2939e7b7549aad43aa05f50b51, type: 3}
+  m_Script: {fileID: 11500000, guid: f7c9a9edeec78ae46a7c593f9aa3107b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  agentPrefab: {fileID: 7446582288102933031, guid: 82710252bc68a16439de07b53aff8d25,
+  agentPrefab: {fileID: 6488987664036335304, guid: 87841d4c90c2d4a4d90fe86034cf9910,
     type: 3}
-  agents: []
-  behaviour: {fileID: 11400000, guid: f7696325a2be66a46a46e68683c22fb3, type: 2}
-  driveFactor: 11.9
-  MaxSpeed: 12
-  neighborRadius: 10
-  avoidanceRadiusMultiplier: 3.7
+  behaviour: {fileID: 0}
+  startingCount: 250
+  driveFactor: 10
+  MaxSpeed: 5
+  neighborRadius: 1.5
+  avoidanceRadiusMultiplier: 0.5
   playerTransform: {fileID: 0}
