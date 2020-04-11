@@ -12,6 +12,10 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D _rigidbody;
     private bool _hasSquashed = true;
     private bool _hasTurned = false;
+
+    private bool _hasDied;
+    private float _deathTimer;
+
     [SerializeField] private float _Squash = 0.2f;
     [SerializeField] private float Frequency = 2f;
 
@@ -64,6 +68,14 @@ public class PlayerMovement : MonoBehaviour
             GetComponent<AudioSource>().Play();
         }
         MoveGun();
+        if(_hasDied)
+        {
+            _deathTimer += Time.deltaTime;
+            if(_deathTimer >= 3f)
+            {
+                LoadDeathScene();
+            }
+        }
     }
 
     private void Move()
@@ -195,6 +207,16 @@ public class PlayerMovement : MonoBehaviour
         _rigidbody.isKinematic =true;
         GetComponent<AudioSource>().clip = _dieClip;
         GetComponent<AudioSource>().Play();
+        _hasDied = true;
+        this.gameObject.GetComponentInChildren<SpriteRenderer>().enabled = false;
+        _gun.SetActive(false);
+
+
+        
+    }
+
+    private void LoadDeathScene()
+    {
         SceneManager.LoadScene(2);
     }
 }

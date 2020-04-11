@@ -405,5 +405,5 @@ MonoBehaviour:
   isGlobal: 1
   priority: 0
   blendDistance: 0
-  weight: 0.861
+  weight: 0.78
   sharedProfile: {fileID: 11400000, guid: dd640ea1b52fb064886ea48710e43224, type: 2}
