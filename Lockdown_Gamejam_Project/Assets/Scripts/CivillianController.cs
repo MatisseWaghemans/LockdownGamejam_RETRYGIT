@@ -22,10 +22,12 @@ public class CivillianController : MonoBehaviour
     private Rigidbody2D _rb;
 
     [SerializeField] private float _speed = 5f;
+    [SerializeField]private RoomTriggerScript _rooms;
 
     // Start is called before the first frame update
     void Start()
     {
+        _rooms = GetComponent<RoomTriggerScript>();
         _player = FindObjectOfType<PlayerMovement>();
         _randomPos = new Vector3(Random.insideUnitCircle.x*10,Random.insideUnitCircle.y*10,0);
 
@@ -95,6 +97,11 @@ public class CivillianController : MonoBehaviour
     {
         _spriteRenderer.sprite = _hitSprite;
         FindObjectOfType<Flock>().CreateBoy(transform.position, _hitSprite);
+        Destroy(gameObject);
+    }
+    public void HitBullet()
+    {
+        _rooms._passengers.Remove(this);
         Destroy(gameObject);
     }
 
