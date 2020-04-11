@@ -26,6 +26,9 @@ public class PlayerMovement : MonoBehaviour
     public float Reloadtime = 1f;
 
     public List<GameObject> _followers = new List<GameObject>();
+    [SerializeField] private AudioClip _shootingStart;
+    [SerializeField] private AudioClip _shootingMid;
+    [SerializeField] private AudioClip _shootingEnd;
 
     Vector2 movement;
     // Start is called before the first frame update
@@ -37,13 +40,27 @@ public class PlayerMovement : MonoBehaviour
     private void Update()
     {
         Move();
-
-        if (Input.GetMouseButtonDown(0))
-            ShootGun();
-        if(_hasShot)
+        if(Input.GetMouseButtonDown(0))
         {
-        MoveGun();
+            GetComponent<AudioSource>().clip = _shootingStart;
+            GetComponent<AudioSource>().Play();
         }
+
+        if (Input.GetMouseButton(0))
+        {
+            if(!GetComponent<AudioSource>().isPlaying)
+            {
+            GetComponent<AudioSource>().clip = _shootingMid;
+            GetComponent<AudioSource>().Play();
+            }
+            ShootGun();
+        }
+        if(Input.GetMouseButtonUp(0))
+        {
+            GetComponent<AudioSource>().clip = _shootingEnd;
+            GetComponent<AudioSource>().Play();
+        }
+        MoveGun();
     }
 
     private void Move()
