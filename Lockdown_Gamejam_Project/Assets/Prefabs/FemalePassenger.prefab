@@ -87,7 +87,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -1216627175085383403, guid: ba73f48ca30a64a47902bbad9499855f,
+  m_Sprite: {fileID: -8605556646268389980, guid: ba73f48ca30a64a47902bbad9499855f,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -140,7 +140,7 @@ GameObject:
   - component: {fileID: 852798708967241197}
   - component: {fileID: 6488987664036335304}
   m_Layer: 10
-  m_Name: Passenger
+  m_Name: FemalePassenger
   m_TagString: Civillian
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -173,7 +173,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c36f77d987be53d45b207a32421bf8dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _hitSprite: {fileID: -7476909315587334984, guid: ba73f48ca30a64a47902bbad9499855f,
+  _hitSprite: {fileID: 9197878406815581912, guid: ba73f48ca30a64a47902bbad9499855f,
     type: 3}
   _Squash: 0.2
   Frequency: 2
