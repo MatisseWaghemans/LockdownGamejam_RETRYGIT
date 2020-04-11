@@ -6,9 +6,11 @@ using UnityEngine;
 public class Flock : MonoBehaviour
 {
     public Agent agentPrefab;
-    public List<Agent> agents = new List<Agent>();
+    List<Agent> agents = new List<Agent>();
     public Behaviour behaviour;
 
+    [Range(10, 500)]
+    public int startingCount = 250;
     const float AgentDensity = 2f;
 
     [Range(1f, 100f)]
@@ -30,45 +32,52 @@ public class Flock : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        avoidanceRadiusMultiplier = avoidanceRadiusMultiplier / 10f;
         squareMaxSpeed = MaxSpeed * MaxSpeed;
         squareNeighborRadius = neighborRadius * neighborRadius;
         squareAvoidanceRadius = squareNeighborRadius * avoidanceRadiusMultiplier * avoidanceRadiusMultiplier;
-       //
-       // {
-       //     Agent newAgent = Instantiate(
-       //         agentPrefab,
-       //         UnityEngine.Random.insideUnitCircle  * AgentDensity,
-       //         Quaternion.Euler(Vector3.forward * UnityEngine.Random.Range(0f, 360f)),
-       //         transform
-       //         );
-       //     newAgent.name = "Agent " + i;
-       //     agents.Add(newAgent);
-       // }
+
+     //  for (int i = 0; i < startingCount; i++)
+     //  {
+     //      Agent newAgent = Instantiate(
+     //          agentPrefab,
+     //          UnityEngine.Random.insideUnitCircle * startingCount * AgentDensity,
+     //          Quaternion.Euler(Vector3.forward * UnityEngine.Random.Range(0f, 360f)),
+     //          transform
+     //          );
+     //      newAgent.name = "Agent " + i;
+     //      agents.Add(newAgent);
+     //  }
+
+
     }
 
-    
+    public void CreateBoy(Vector3 position)
+    {
+        Agent newAgent = Instantiate(
+            agentPrefab,
+            position,
+            Quaternion.Euler(Vector3.forward * UnityEngine.Random.Range(0f, 360f)),
+            transform
+            );
+        newAgent.name = "Agent " + agents.Count;
+        agents.Add(newAgent);
+    }
 
     // Update is called once per frame
     void Update()
     {
-        foreach (Agent agent in agents)
+        foreach(Agent agent in agents)
         {
             List<Transform> context = GetNearbyObjects(agent);
             Vector2 move = behaviour.CalculateMove(agent, context, this, playerTransform);
             move *= driveFactor;
-            if (move.sqrMagnitude > squareMaxSpeed)
+            if(move.sqrMagnitude > squareMaxSpeed)
             {
                 move = move.normalized * MaxSpeed;
             }
 
             agent.Move(move);
         }
-    }
-
-    private void FixedUpdate()
-    {
-        
     }
 
     private List<Transform> GetNearbyObjects(Agent agent)
@@ -78,7 +87,6 @@ public class Flock : MonoBehaviour
 
         foreach (Collider2D c in contextColliders)
         {
-
             if (c != agent.AgentCollider)
             {
                 context.Add(c.transform);

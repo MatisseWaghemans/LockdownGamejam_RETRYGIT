@@ -62,10 +62,10 @@ public class CivillianController : MonoBehaviour
     }
     void FollowLeader()
     {
-        if (_hasSquashed)
-        {
-            StartCoroutine(Squash());
-        }
+      //  if (_hasSquashed)
+      //  {
+      //      StartCoroutine(Squash());
+      //  }
      //   transform.parent = _player.transform;
      //   
      //   if(_player._followers.Capacity>=10)
@@ -94,11 +94,8 @@ public class CivillianController : MonoBehaviour
     public void Hit()
     {
         _spriteRenderer.sprite = _hitSprite;
-        FindObjectOfType<Flock>().agents.Add(GetComponent<Agent>());
-        GetComponentInChildren<SpriteFlock>().isEnabled = true;
-        gameObject.layer = 14;
-        transform.GetChild(0).gameObject.layer = 14;
-        _isHit = true;
+        FindObjectOfType<Flock>().CreateBoy(transform.position);
+        Destroy(gameObject);
     }
 
     IEnumerator Squash()
