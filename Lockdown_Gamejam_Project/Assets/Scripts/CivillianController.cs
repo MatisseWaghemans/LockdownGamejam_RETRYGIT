@@ -21,6 +21,7 @@ public class CivillianController : MonoBehaviour
 
     private SpriteRenderer _spriteRenderer;
     private Rigidbody2D _rb;
+    private float moveTimer;
 
     [SerializeField] private float _speed = 0.01f;
     [SerializeField]private RoomTriggerScript _rooms;
@@ -40,6 +41,16 @@ public class CivillianController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        moveTimer += Time.deltaTime;
+
+        if (moveTimer >= 3)
+        {
+            _randomPos = _beginPos + new Vector3((Random.insideUnitCircle * _radius).x, (Random.insideUnitCircle * _radius).y, 0);
+            _moving = true;
+
+            moveTimer = 0;
+
+        }
         float distance = Vector3.Distance(transform.position, _randomPos);
 
         _rb.velocity = Vector2.one * _speed * Time.deltaTime;
@@ -53,12 +64,11 @@ public class CivillianController : MonoBehaviour
                 StartCoroutine(Squash());
             }
         }
-        if (distance < 1)
-        {
-            _moving = false;
-            _randomPos = _beginPos + new Vector3((Random.insideUnitCircle * _radius).x, (Random.insideUnitCircle * _radius).y, 0);
-            _moving = true;
-        }
+        //if (distance < 1)
+        //{
+        //    //_randomPos = _beginPos + new Vector3((Random.insideUnitCircle * _radius).x, (Random.insideUnitCircle * _radius).y, 0);
+        //    _moving = true;
+        //}
     }
 
     public void Hit()
