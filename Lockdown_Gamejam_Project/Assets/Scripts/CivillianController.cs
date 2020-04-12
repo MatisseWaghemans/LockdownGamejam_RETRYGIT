@@ -40,26 +40,25 @@ public class CivillianController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        float distance = Vector3.Distance(transform.position, _randomPos);
 
-        // _rb.velocity = Vector2.one * _speed * Time.deltaTime;
-        // _player = FindObjectOfType<PlayerMovement>();
-        //     if (_moving)
-        //     {
-        //         _rb.MovePosition(Vector2.Lerp(transform.position, _randomPos, Time.deltaTime * _speed));
+        _rb.velocity = Vector2.one * _speed * Time.deltaTime;
+        _player = FindObjectOfType<PlayerMovement>();
+        if (_moving)
+        {
+            _rb.MovePosition(Vector2.Lerp(transform.position, _randomPos, Time.deltaTime * _speed));
 
-        //         if (_hasSquashed)
-        //         {
-        //             StartCoroutine(Squash());
-        //         }
-        //     }
-
-        //     float distance = Vector3.Distance(transform.position,_randomPos);
-        //     if(distance<1)
-        //     {
-        //         _moving = false;
-        //         _randomPos = _beginPos +new Vector3((Random.insideUnitCircle*_radius).x,(Random.insideUnitCircle*_radius).y,0);
-        //         _moving = true;
-        //     }
+            if (_hasSquashed)
+            {
+                StartCoroutine(Squash());
+            }
+        }
+        if (distance < 1)
+        {
+            _moving = false;
+            _randomPos = _beginPos + new Vector3((Random.insideUnitCircle * _radius).x, (Random.insideUnitCircle * _radius).y, 0);
+            _moving = true;
+        }
     }
 
     public void Hit()
