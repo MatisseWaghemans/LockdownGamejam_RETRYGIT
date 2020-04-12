@@ -10,6 +10,7 @@ public class RoomTriggerScript : MonoBehaviour
     bool _allEnemiesHit, _allPassengersHit;
     public bool NextRoom;
     [SerializeField] private Generator _generator;
+    [SerializeField] private int _voteFrequency = 2;
 
     // Start is called before the first frame update
     public void CheckPeople()
@@ -20,6 +21,11 @@ public class RoomTriggerScript : MonoBehaviour
         }
         _enemies.AddRange(FindObjectsOfType<EnemyController>());
         _passengers.AddRange(FindObjectsOfType<CivillianController>());
+    }
+
+    private void Start()
+    {
+        CheckPeople();
     }
 
     // Update is called once per frame
@@ -33,12 +39,17 @@ public class RoomTriggerScript : MonoBehaviour
             {
                 return;               
             }
-            else _allEnemiesHit = true;
         }
-        if(_allEnemiesHit)
+        _allEnemiesHit = true;
+        if (_allEnemiesHit && _generator.CurrentRoom != _generator._roomList.Count)
         {
+
             _generator.CurrentRoom++;
-            GoToNextRoom();
+                if (_generator.CurrentRoom % _voteFrequency == 0)
+                {
+                    _generator._roomList[_generator.CurrentRoom].gameObject.transform.GetChild(0).gameObject.SetActive(true);
+                }
+                GoToNextRoom();
             NextRoom = true;
         }
         }

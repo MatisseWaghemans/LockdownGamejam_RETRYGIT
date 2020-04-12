@@ -10,6 +10,8 @@ public class VoteBooth : MonoBehaviour
     private ScoreManager _scoreManager;
     [SerializeField] private int removeAmount = 2;
 
+    private GameObject _flock;
+
     private bool _hasEntered = false;
     private int remove;
 
@@ -18,6 +20,8 @@ public class VoteBooth : MonoBehaviour
     {
         _player = (PlayerMovement)FindObjectOfType(typeof(PlayerMovement));
         _scoreManager = (ScoreManager)FindObjectOfType(typeof(ScoreManager));
+
+        _flock = FindObjectOfType<Flock>().gameObject;
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -26,29 +30,30 @@ public class VoteBooth : MonoBehaviour
         {
             if (other.CompareTag("Player"))
             {
+                int count = _flock.transform.childCount;
                 if (_isEnd)
                 {
-                    if (_player._followers.Count == 0)
+                    if (count == 0)
                     {
                         SceneManager.LoadScene("VictoryScreen");
                     }
                     else
                     {
-                        remove = _player._followers.Count;
+                        remove = count;
                         _scoreManager.AddScore(remove);
-                        RemoveFollowers(_player._followers.Count);
+                        RemoveFollowers(count);
                         SceneManager.LoadScene("VictoryScreen");
                     }
                     return;
                 }
                 Debug.Log("Player has entered");
-                if (_player._followers.Count == 0)
+                if (count == 0)
                 {
                     return;
                 }
-                if (_player._followers.Count < removeAmount)
+                if (count < removeAmount)
                 {
-                    remove = _player._followers.Count;
+                    remove = count;
                     RemoveFollowers(remove);
                     _scoreManager.AddScore(remove);
                 }
@@ -67,8 +72,7 @@ public class VoteBooth : MonoBehaviour
     {
         for (int followerIndex = 0; followerIndex < removeAmount; followerIndex++)
         {
-            GameObject follower = _player._followers[followerIndex].gameObject;
-            _player._followers.Remove(follower);
+            GameObject follower = _flock.transform.GetChild(followerIndex).gameObject;
             Destroy(follower);
         }
     }
