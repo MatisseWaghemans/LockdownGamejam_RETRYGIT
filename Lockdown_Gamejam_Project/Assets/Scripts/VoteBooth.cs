@@ -8,7 +8,7 @@ public class VoteBooth : MonoBehaviour
 {
     private PlayerMovement _player;
     private ScoreManager _scoreManager;
-    [SerializeField] private int removeAmount = 2;
+    public static int removeAmount = 2;
 
     private GameObject _flock;
 

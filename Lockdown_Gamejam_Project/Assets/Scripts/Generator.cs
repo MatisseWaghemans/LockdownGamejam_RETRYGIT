@@ -18,7 +18,7 @@ public class Generator : MonoBehaviour
     public readonly List<GameObject> _roomList = new List<GameObject>();
 
     [SerializeField]
-    public int NumberOfRooms = 5;
+    public static int NumberOfRooms = 5;
 
     private float _offsetHorizontal = 28f;
     private float _offsetVertical = 16f;
