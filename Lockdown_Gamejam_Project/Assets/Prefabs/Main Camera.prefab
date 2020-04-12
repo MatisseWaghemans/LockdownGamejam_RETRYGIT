@@ -146,7 +146,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4723047290653992855}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 95b8e00f5c3a3d84a8392d0789f7b5ee, type: 3}
   m_Name: 
@@ -160,6 +160,7 @@ MonoBehaviour:
   _passengers: []
   NextRoom: 0
   _generator: {fileID: 0}
+  _voteFrequency: 2
 --- !u!1 &4723047291549325639
 GameObject:
   m_ObjectHideFlags: 0

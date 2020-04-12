@@ -267,11 +267,6 @@ PrefabInstance:
       propertyPath: _generator
       value: 
       objectReference: {fileID: 834416361}
-    - target: {fileID: 4723047291549325644, guid: 24a25f2bdcd7bc443839c86a84468947,
-        type: 3}
-      propertyPath: LerpValue
-      value: 0.1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 24a25f2bdcd7bc443839c86a84468947, type: 3}
 --- !u!1001 &728853287

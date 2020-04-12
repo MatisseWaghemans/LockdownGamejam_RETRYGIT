@@ -43,6 +43,7 @@ public class CarController : MonoBehaviour
                 {
                     Instantiate(_playerPrefab,transform.position,transform.rotation);
                     Camera.main.GetComponent<CameraScriptWard>().enabled = true;
+                    Camera.main.GetComponentInChildren<RoomTriggerScript>().enabled = true;
                     _stalinCreated =true;
 
                 }

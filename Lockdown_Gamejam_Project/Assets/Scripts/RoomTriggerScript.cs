@@ -41,7 +41,7 @@ public class RoomTriggerScript : MonoBehaviour
             }
         }
         _allEnemiesHit = true;
-            if (_allEnemiesHit && _generator.CurrentRoom != _generator._roomList.Count)
+        if (_allEnemiesHit && _generator.CurrentRoom != _generator._roomList.Count)
         {
 
             _generator.CurrentRoom++;
