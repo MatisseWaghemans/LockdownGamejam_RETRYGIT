@@ -617,11 +617,11 @@ PlayerSettings:
   m_MobileRenderingPath: 1
   metroPackageName: Template_Lightweight
   metroPackageVersion: 
-  metroCertificatePath: 
+  metroCertificatePath: D:\TeVoetKaart\Gamejam\LockdownGamejam_RETRYGIT\Lockdown_Gamejam_Project\Assets\WSATestCertificate.pfx
   metroCertificatePassword: 
-  metroCertificateSubject: 
-  metroCertificateIssuer: 
-  metroCertificateNotAfter: 0000000000000000
+  metroCertificateSubject: DefaultCompany
+  metroCertificateIssuer: DefaultCompany
+  metroCertificateNotAfter: 8080785f792fd701
   metroApplicationDescription: Template_Lightweight
   wsaImages: {}
   metroTileShortName: 
