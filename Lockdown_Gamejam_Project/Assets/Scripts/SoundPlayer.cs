@@ -11,6 +11,7 @@ public class SoundPlayer : MonoBehaviour
         gameObject.AddComponent<AudioSource>();
         GetComponent<AudioSource>().clip = _clips[0];
         GetComponent<AudioSource>().Play();
+        GetComponent<AudioSource>().loop=true;
         GetComponent<AudioSource>().volume=0.2f;
         DontDestroyOnLoad(gameObject);
     }
@@ -25,6 +26,7 @@ public class SoundPlayer : MonoBehaviour
         {
             GetComponent<AudioSource>().clip = _clips[1];
             GetComponent<AudioSource>().volume=1f;
+            GetComponent<AudioSource>().loop=true;
             GetComponent<AudioSource>().Play();
         }
         if(SceneManager.GetActiveScene()==SceneManager.GetSceneByBuildIndex(3))
