@@ -56,9 +56,11 @@ MonoBehaviour:
   HorizontalRooms:
   - {fileID: 7419063468668511210, guid: 6f58c534d4c1da54797c43e6a34bc6cc, type: 3}
   - {fileID: 7419063468668511210, guid: 1071260ceb77fef469cb12dfd306501c, type: 3}
+  - {fileID: 7419063468668511210, guid: 8f24658be16d2d34b850b333783c274c, type: 3}
   VerticalRooms:
   - {fileID: 7419063468668511210, guid: f8a2e0ac52706664dac1ce6db5de302b, type: 3}
   - {fileID: 7419063468668511210, guid: e062d746c50fa02448736236f962a4f2, type: 3}
+  - {fileID: 7419063468668511210, guid: 055a7f8cfdd1f88488a47df541c96dbb, type: 3}
   LWayRightTopRooms:
   - {fileID: 7419063468668511210, guid: dfcfc8db57c8fbb4dafbee75919ffca9, type: 3}
   LWayRightBottomRooms:
@@ -68,5 +70,4 @@ MonoBehaviour:
   LWayLeftBottomRooms:
   - {fileID: 7419063468668511210, guid: d2f8afa9a117465438da70d37b3b7842, type: 3}
   _roomPositionList: []
-  NumberOfRooms: 10
   CurrentRoom: 0
