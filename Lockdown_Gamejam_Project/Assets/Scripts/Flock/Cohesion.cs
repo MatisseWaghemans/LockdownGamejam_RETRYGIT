@@ -8,9 +8,14 @@ public class Cohesion : Behaviour
     
     public override Vector2 CalculateMove(Agent agent, List<Transform> context, Flock flock, Transform playerTransform)
     {
+        Vector2 cohesionMove = Vector2.zero;
+        if (agent == null)
+        {
+            return cohesionMove;
+        }
      //  if (context.Count == 0)
      //      return Vector2.zero;
-       Vector2 cohesionMove = Vector2.zero;
+       
      //  foreach(Transform item in context)
      //  {
      //      cohesionMove += (Vector2) item.position;

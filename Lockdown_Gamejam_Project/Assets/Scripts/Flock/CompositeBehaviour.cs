@@ -11,6 +11,10 @@ public class CompositeBehaviour : Behaviour
 
     public override Vector2 CalculateMove(Agent agent, List<Transform> context, Flock flock, Transform playerTransform)
     {
+        if (agent == null)
+        {
+            return Vector2.zero;
+        }
         if(weights.Length != behaviours.Length)
         {
             Debug.LogError("Data mismatch in " + name, this);

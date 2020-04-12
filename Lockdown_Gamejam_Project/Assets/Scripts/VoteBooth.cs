@@ -73,7 +73,10 @@ public class VoteBooth : MonoBehaviour
         for (int followerIndex = 0; followerIndex < removeAmount; followerIndex++)
         {
             GameObject follower = _flock.transform.GetChild(followerIndex).gameObject;
+            Flock flock = _flock.GetComponent<Flock>();
             Destroy(follower);
+            flock.agents.Remove(flock.agents[followerIndex]);
+
         }
     }
 }

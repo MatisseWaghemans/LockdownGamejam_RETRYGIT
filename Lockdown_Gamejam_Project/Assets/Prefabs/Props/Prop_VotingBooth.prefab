@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 6655001206645761339}
   - component: {fileID: 2862707596739014262}
   - component: {fileID: 8834417507984871174}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: SPrite_Back
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -206,6 +206,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   removeAmount: 2
+  _isEnd: 0
 --- !u!114 &8834417507984871174
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 950766707671620785}
   - component: {fileID: 950766707671620786}
-  - component: {fileID: 950766707671620784}
   m_Layer: 0
   m_Name: Manager
   m_TagString: Untagged
@@ -48,7 +47,7 @@ MonoBehaviour:
   - {fileID: 7419063468668511210, guid: def164cfd15de8d4da823cd64899a027, type: 3}
   - {fileID: 7419063468668511210, guid: 104557ba3296a54469292bea9f14d13e, type: 3}
   - {fileID: 7419063468668511210, guid: 9096dc0ba20b2ab4b918ce9eedcb52b5, type: 3}
-  - {fileID: 7419063468668511210, guid: a81a16d1a0670e248801c73e52848260, type: 3}
+  - {fileID: 7419063468668511210, guid: fd1d301e32ed21847bd2088217a32b3c, type: 3}
   EndRooms:
   - {fileID: 7419063468668511210, guid: f0e6b85fd178150428f9e2652c66d403, type: 3}
   - {fileID: 7419063468668511210, guid: 16c960992fb73bd4a845ea0cd168d12e, type: 3}
@@ -69,17 +68,5 @@ MonoBehaviour:
   LWayLeftBottomRooms:
   - {fileID: 7419063468668511210, guid: d2f8afa9a117465438da70d37b3b7842, type: 3}
   _roomPositionList: []
-  NumberOfRooms: 20
+  NumberOfRooms: 5
   CurrentRoom: 0
---- !u!114 &950766707671620784
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 950766707671620787}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f334063ddfb3b943a6b91902afe20da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

@@ -9,6 +9,10 @@ public class SteeredCohesion : Behaviour
     public float agentSmoothTime = 0.5f;
     public override Vector2 CalculateMove(Agent agent, List<Transform> context, Flock flock, Transform playerTransform)
     {
+        if (agent == null)
+        {
+            return Vector2.zero;
+        }
        // if (context.Count == 0)
        //     return Vector2.zero;
         Vector2 cohesionMove = Vector2.zero;

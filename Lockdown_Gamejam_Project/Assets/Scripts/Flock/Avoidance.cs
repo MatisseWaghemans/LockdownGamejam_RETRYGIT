@@ -11,9 +11,11 @@ public class Avoidance : FilteredFlockBehaviour
     public override Vector2 CalculateMove(Agent agent, List<Transform> context, Flock flock, Transform playerTransform)
     {
         Vector2 avoidanceMove = Vector2.zero;
-
+        if (agent == null)
+        {
+            return avoidanceMove;
+        }
         int nAvoid = 0;
-
 
         float calc = Vector2.SqrMagnitude(playerTransform.position - agent.transform.position);
         if (calc < flock.SquareAvoidanceRadius)

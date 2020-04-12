@@ -6,7 +6,7 @@ using UnityEngine;
 public class Flock : MonoBehaviour
 {
     public Agent agentPrefab;
-    List<Agent> agents = new List<Agent>();
+    public List<Agent> agents = new List<Agent>();
     public Behaviour behaviour;
 
     [Range(10, 500)]
@@ -75,6 +75,10 @@ public class Flock : MonoBehaviour
         playerTransform = FindObjectOfType<PlayerMovement>().transform;
         foreach(Agent agent in agents)
         {
+            if (agent == null)
+            {
+                return;
+            }
             List<Transform> context = GetNearbyObjects(agent);
             Vector2 move = behaviour.CalculateMove(agent, context, this, playerTransform);
             move *= driveFactor;
