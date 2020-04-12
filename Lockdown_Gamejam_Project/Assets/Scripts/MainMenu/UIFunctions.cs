@@ -22,6 +22,8 @@ public class UIFunctions : MonoBehaviour
     private bool difficultyClicked;
 
     private bool returnClicked;
+    private bool exitClicked;
+
 
 
     private void Update()
@@ -46,7 +48,7 @@ public class UIFunctions : MonoBehaviour
             timer = 0;
             playClicked = false;
         }
-        if(difficultyClicked)
+        if (difficultyClicked)
         {
             timer += Time.deltaTime;
         }
@@ -56,7 +58,16 @@ public class UIFunctions : MonoBehaviour
             timer = 0;
             playClicked = false;
         }
-
+        if (exitClicked)
+        {
+            timer += Time.deltaTime;
+        }
+        if (timer >= 4.5f)
+        {
+            ExitGame();
+            timer = 0;
+            exitClicked = false;
+        }
     }
 
     private void PlayWithDifficulty()
@@ -112,5 +123,14 @@ public class UIFunctions : MonoBehaviour
         VictoryScreen.SetActive(false);
 
     }
+    public void ExitClicked()
+    {
+        exitClicked = true;
 
+        vignetteAnimator.SetTrigger("PlayPressed");
+    }
+    public void ExitGame()
+    {
+        Application.Quit();
+    }
 }
