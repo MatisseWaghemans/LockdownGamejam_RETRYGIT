@@ -46,6 +46,8 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
+        if(!IsHit)
+        {
         Move();
         if(Input.GetMouseButtonDown(0))
         {
@@ -68,6 +70,7 @@ public class PlayerMovement : MonoBehaviour
             GetComponent<AudioSource>().Play();
         }
         MoveGun();
+        }
         if(_hasDied)
         {
             _deathTimer += Time.deltaTime;
@@ -76,6 +79,7 @@ public class PlayerMovement : MonoBehaviour
                 LoadDeathScene();
             }
         }
+        
     }
 
     private void Move()

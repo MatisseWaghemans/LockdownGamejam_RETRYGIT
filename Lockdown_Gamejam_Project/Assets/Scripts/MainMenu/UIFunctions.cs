@@ -61,7 +61,7 @@ public class UIFunctions : MonoBehaviour
     }
     public void StartGame()
     {
-        SceneManager.LoadScene("FirstLevel 1");
+        SceneManager.LoadScene("DifficultyScreen");
     }
     public void PlayClicked()
     {

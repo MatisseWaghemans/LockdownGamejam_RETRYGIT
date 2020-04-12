@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SpawnController : MonoBehaviour
 {
-    [SerializeField] private GameObject _enemyPrefab;
+    [SerializeField] private GameObject[] _enemyPrefab;
     [SerializeField] private GameObject[] _passengerPrefab;
     private Generator _generator;
     // Start is called before the first frame update
@@ -19,7 +19,7 @@ public class SpawnController : MonoBehaviour
         for(int i =0;i<_generator.CurrentRoom+1;i++)
         {
             Vector3 pos = transform.parent.position +new Vector3((Random.insideUnitCircle*7).x,(Random.insideUnitCircle*7).y,0);
-            Instantiate(_enemyPrefab,pos,transform.rotation);
+            Instantiate(_enemyPrefab[Random.Range(0,2)],pos,transform.rotation);
         }
             FindObjectOfType<RoomTriggerScript>().CheckPeople();
     }

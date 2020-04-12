@@ -38,7 +38,11 @@ public class NotesBehavior : MonoBehaviour
         }
         if(other.gameObject.tag =="Civillian")
         {
-            // if(other.transform.parent.CompareTag("Player"))    
+            // if(other.transform.parent.CompareTag("Player"))
+            if(other.gameObject.GetComponent<CivillianController>().IsHit)
+            {
+                return;
+            }    
             other.gameObject.GetComponent<CivillianController>().Hit();
             Destroy(this.gameObject);
         }

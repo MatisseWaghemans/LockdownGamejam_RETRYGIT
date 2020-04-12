@@ -70,10 +70,15 @@ public class CivillianController : MonoBehaviour
         GetComponent<AudioSource>().clip = _clips[Random.Range(0,4)];
         GetComponent<AudioSource>().Play();
         _spriteRenderer.sprite = _hitSprite;
+        if(!_isHit)
+        {
         FindObjectOfType<Flock>().CreateBoy(transform.position, _hitSprite);
-        Destroy(gameObject);
+            _isHit=true;
+        }
+        GetComponentInChildren<SpriteRenderer>().enabled=false;
+        Destroy(gameObject,GetComponent<AudioSource>().clip.length);
 
-        _isHit=true;
+
     }
 
     IEnumerator Squash()

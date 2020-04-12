@@ -72,7 +72,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 86648134852479758, guid: 972bb9b71b999144eac3339c9e1c8e25, type: 3}
+  m_Sprite: {fileID: 4862343642280301131, guid: 972bb9b71b999144eac3339c9e1c8e25,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -138,7 +139,7 @@ GameObject:
   - component: {fileID: -5916362556103559674}
   - component: {fileID: 6232100132983916540}
   m_Layer: 12
-  m_Name: Enemy
+  m_Name: Enemy_Female
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -187,7 +188,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 1a7f0118727fca24bbdfa7453cb27a85, type: 3}
   - {fileID: 8300000, guid: 4154575863aee09409bcf93a8dbfc1db, type: 3}
   - {fileID: 8300000, guid: 86769f2109e182040b449d8fc5ab6db6, type: 3}
-  _hitSprite: {fileID: -7476909315587334984, guid: 972bb9b71b999144eac3339c9e1c8e25,
+  _hitSprite: {fileID: -8511640833059208836, guid: 972bb9b71b999144eac3339c9e1c8e25,
     type: 3}
 --- !u!61 &1567688146341985703
 BoxCollider2D:

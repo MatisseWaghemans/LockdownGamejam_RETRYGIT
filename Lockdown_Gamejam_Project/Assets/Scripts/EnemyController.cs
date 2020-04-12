@@ -20,6 +20,7 @@ public class EnemyController : MonoBehaviour
     [SerializeField] private float _Squash = 0.2f;
     [SerializeField] private float Frequency = 2f;
     [SerializeField] private List<AudioClip> _clips = new List<AudioClip>(5);
+    [SerializeField] private Sprite _hitSprite;
     RoomTriggerScript _room;
 
     void Start()
@@ -159,6 +160,7 @@ public class EnemyController : MonoBehaviour
     {
         if(!_isHit)
         {
+            character.sprite=_hitSprite;
             character.GetComponent<Collider2D>().enabled = false;
             GetComponent<AudioSource>().clip = _clips[Random.Range(0,5)];
             GetComponent<AudioSource>().Play();

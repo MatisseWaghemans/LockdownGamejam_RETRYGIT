@@ -1,12 +1,18 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 public enum Difficulty
 {
     easy=0,medium=1,hard=2
 }
 public class DifficultyManager :MonoBehaviour
 {
+    void OnAwake()
+    {
+        DontDestroyOnLoad(this.gameObject);
+    }
     public void SetDifficulty(Difficulty diff)
     {
         if(diff == Difficulty.easy)
@@ -33,14 +39,17 @@ public class DifficultyManager :MonoBehaviour
         if(difficulty==0)
         {
             SetDifficulty(Difficulty.easy);
+            SceneManager.LoadScene("FirstLevel 1");
         }
         if(difficulty==1)
         {
             SetDifficulty(Difficulty.medium);
+            SceneManager.LoadScene("FirstLevel 1");
         }
         if(difficulty==2)
         {
             SetDifficulty(Difficulty.hard);
+            SceneManager.LoadScene("FirstLevel 1");
         }
     }
 }

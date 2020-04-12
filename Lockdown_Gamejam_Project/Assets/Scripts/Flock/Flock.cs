@@ -63,6 +63,7 @@ public class Flock : MonoBehaviour
         newAgent.name = "Agent " + agents.Count;
         newAgent.transform.GetComponentInChildren<SpriteRenderer>().sprite = sprite;
         agents.Add(newAgent);
+        CheckAgents();
         foreach(Agent agent in agents)
         {
             if(agent==null)

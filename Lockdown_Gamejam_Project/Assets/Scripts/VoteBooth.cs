@@ -71,15 +71,14 @@ public class VoteBooth : MonoBehaviour
 
     private void RemoveFollowers(int removeAmount)
     {
-        for (int followerIndex = 0; followerIndex <= removeAmount; followerIndex++)
+        for (int followerIndex = 0; followerIndex < removeAmount; followerIndex++)
         {
             GameObject follower = _flock.transform.GetChild(followerIndex).gameObject;
             Flock flock = _flock.GetComponent<Flock>();
             flock.agents.Remove(flock.agents[followerIndex]);
             Destroy(follower);
+            flock.CheckAgents();
 
         }
-        Flock newFlock = _flock.GetComponent<Flock>();
-        newFlock.CheckAgents();
     }
 }
