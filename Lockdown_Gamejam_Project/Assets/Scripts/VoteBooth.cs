@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class VoteBooth : MonoBehaviour
 {
@@ -11,6 +12,8 @@ public class VoteBooth : MonoBehaviour
 
     private bool _hasEntered = false;
     private int remove;
+
+    [SerializeField] private bool _isEnd = false;
     private void Start()
     {
         _player = (PlayerMovement)FindObjectOfType(typeof(PlayerMovement));
@@ -23,6 +26,21 @@ public class VoteBooth : MonoBehaviour
         {
             if (other.CompareTag("Player"))
             {
+                if (_isEnd)
+                {
+                    if (_player._followers.Count == 0)
+                    {
+                        SceneManager.LoadScene("VictoryScreen");
+                    }
+                    else
+                    {
+                        remove = _player._followers.Count;
+                        _scoreManager.AddScore(remove);
+                        RemoveFollowers(_player._followers.Count);
+                        SceneManager.LoadScene("VictoryScreen");
+                    }
+                    return;
+                }
                 Debug.Log("Player has entered");
                 if (_player._followers.Count == 0)
                 {
@@ -31,13 +49,15 @@ public class VoteBooth : MonoBehaviour
                 if (_player._followers.Count < removeAmount)
                 {
                     remove = _player._followers.Count;
+                    RemoveFollowers(remove);
+                    _scoreManager.AddScore(remove);
                 }
                 else
                 {
-                    remove = removeAmount;                 
+                    remove = removeAmount;
+                    RemoveFollowers(remove);
+                    _scoreManager.AddScore(remove);
                 }
-                RemoveFollowers(remove);
-                _scoreManager.AddScore(remove);
                 _hasEntered = true;
             }
         }      
