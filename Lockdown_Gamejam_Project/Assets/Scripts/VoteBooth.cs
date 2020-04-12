@@ -30,7 +30,8 @@ public class VoteBooth : MonoBehaviour
         {
             if (other.CompareTag("Player"))
             {
-                int count = _flock.transform.childCount;
+                int count = _flock.transform.childCount-1;
+                Debug.Log(count);
                 if (_isEnd)
                 {
                     if (count == 0)
@@ -41,7 +42,7 @@ public class VoteBooth : MonoBehaviour
                     {
                         remove = count;
                         _scoreManager.AddScore(remove);
-                        RemoveFollowers(count);
+                        //RemoveFollowers(count);
                         SceneManager.LoadScene("VictoryScreen");
                     }
                     return;
@@ -70,7 +71,7 @@ public class VoteBooth : MonoBehaviour
 
     private void RemoveFollowers(int removeAmount)
     {
-        for (int followerIndex = 0; followerIndex < removeAmount; followerIndex++)
+        for (int followerIndex = 0; followerIndex <= removeAmount; followerIndex++)
         {
             GameObject follower = _flock.transform.GetChild(followerIndex).gameObject;
             Flock flock = _flock.GetComponent<Flock>();

@@ -217,6 +217,6 @@ public class PlayerMovement : MonoBehaviour
 
     private void LoadDeathScene()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(2);
     }
 }

@@ -205,7 +205,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87454ae5b9101814d9c973eb72f83a20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  removeAmount: 2
+  removeAmount: 5
   _isEnd: 0
 --- !u!114 &8834417507984871174
 MonoBehaviour:

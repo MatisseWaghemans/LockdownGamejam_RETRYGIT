@@ -35,8 +35,9 @@ public class CameraScriptWard : MonoBehaviour
   {
     if(!_move)
     {
+      Vector3 _previousPos = new Vector3(_generator._roomPositionList[_generator.CurrentRoom-1].x,_generator._roomPositionList[_generator.CurrentRoom-1].y,-2);
       position = new Vector3(_generator._roomPositionList[_generator.CurrentRoom].x,_generator._roomPositionList[_generator.CurrentRoom].y,-2);
-      Direction = transform.position-position;
+      Direction = _previousPos-position;
     }
   }
   public void MoveToNextRoom()
