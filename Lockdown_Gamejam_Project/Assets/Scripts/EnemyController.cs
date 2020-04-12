@@ -163,6 +163,8 @@ public class EnemyController : MonoBehaviour
             GetComponent<AudioSource>().clip = _clips[Random.Range(0,5)];
             GetComponent<AudioSource>().Play();
             _rb.isKinematic=true;
+
+            Destroy(this.gameObject, GetComponent<AudioSource>().clip.length);
         
         }
         _isHit = true;
