@@ -21,6 +21,10 @@ public class RoomTriggerScript : MonoBehaviour
         }
         _enemies.AddRange(FindObjectsOfType<EnemyController>());
         _passengers.AddRange(FindObjectsOfType<CivillianController>());
+        foreach(CivillianController civil in _passengers)
+        {
+            civil.BeginPos = _generator._roomPositionList[_generator.CurrentRoom];
+        }
     }
 
     private void Start()

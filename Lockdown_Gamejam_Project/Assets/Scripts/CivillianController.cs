@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CivillianController : MonoBehaviour
 {
-    private Vector3 _beginPos;
+    public Vector3 BeginPos;
     private Vector3 _randomPos;
     [SerializeField] private Sprite _hitSprite;
     private bool _moving = true;
@@ -19,23 +19,19 @@ public class CivillianController : MonoBehaviour
     private float _radius = 10;
     [SerializeField] private List<AudioClip> _clips = new List<AudioClip>(4);
 
-    private SpriteRenderer _spriteRenderer;
-    private Rigidbody2D _rb;
+    [SerializeField] private SpriteRenderer _spriteRenderer;
+    [SerializeField] private Rigidbody2D _rb;
     private float moveTimer;
 
     [SerializeField] private float _speed = 0.01f;
-    [SerializeField]private RoomTriggerScript _rooms;
     
 
     // Start is called before the first frame update
-    void Start()
+    void OnEnable()
     {
-        _beginPos = transform.position;
-        _rooms = FindObjectOfType<RoomTriggerScript>();
-        _player = FindObjectOfType<PlayerMovement>();
-
-        _spriteRenderer = this.GetComponentInChildren<SpriteRenderer>();
-        _rb = this.GetComponent<Rigidbody2D>();
+        Generator generator = FindObjectOfType<Generator>();
+        BeginPos = generator._roomPositionList[generator.CurrentRoom];
+        _randomPos = BeginPos + new Vector3((Random.insideUnitCircle * _radius).x, (Random.insideUnitCircle * _radius).y, 0);
     }
 
     // Update is called once per frame
@@ -45,7 +41,7 @@ public class CivillianController : MonoBehaviour
 
         if (moveTimer >= 3)
         {
-            _randomPos = _beginPos + new Vector3((Random.insideUnitCircle * _radius).x, (Random.insideUnitCircle * _radius).y, 0);
+            _randomPos = BeginPos + new Vector3((Random.insideUnitCircle * _radius).x, (Random.insideUnitCircle * _radius).y, 0);
             _moving = true;
 
             moveTimer = 0;
@@ -53,8 +49,6 @@ public class CivillianController : MonoBehaviour
         }
         float distance = Vector3.Distance(transform.position, _randomPos);
 
-        _rb.velocity = Vector2.one * _speed * Time.deltaTime;
-        _player = FindObjectOfType<PlayerMovement>();
         if (_moving)
         {
             _rb.MovePosition(Vector2.Lerp(transform.position, _randomPos, Time.deltaTime * _speed));
