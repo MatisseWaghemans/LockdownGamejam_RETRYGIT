@@ -9,9 +9,6 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: d1c3109bdb54ad54c8a2b2838528e640
   - enabled: 1
-    path: Assets/Scenes/FirstLevel.unity
-    guid: 30071ef99a085244a9099cc507eee71c
-  - enabled: 1
     path: Assets/Scenes/DeathScreen.unity
     guid: 6e9cf9cf913fb384aa6e6ca04c6f72db
   - enabled: 1
@@ -20,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/VictoryScreen.unity
     guid: bfd5b73987b3fd04689f8f09034487f9
+  - enabled: 1
+    path: Assets/Scenes/FirstLevel 1.unity
+    guid: 65020c294a213094f9430e3d09ce8192
   m_configObjects: {}

@@ -42,7 +42,7 @@ public class BulletController : MonoBehaviour
         }
         if(collider.gameObject.tag =="Agent")
         {
-            Destroy(collider.gameObject);
+            collider.gameObject.SetActive(false);
             Destroy(this.gameObject);
         }
     }
