@@ -7,7 +7,19 @@ TextureImporter:
     second: Sprite_Enemys01
   - first:
       213: -7476909315587334984
-    second: Sprite_Enemys_1
+    second: Sprite_Enemys01-Sad
+  - first:
+      213: 86648134852479758
+    second: Sprite_Enemys01-Angry
+  - first:
+      213: -8230944052248651670
+    second: Sprite_Enemys01-Sad
+  - first:
+      213: 4862343642280301131
+    second: Sprite_Enemys02-Angry
+  - first:
+      213: -8511640833059208836
+    second: Sprite_Enemys02-Sad
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -93,7 +105,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Sprite_Enemys01
+      name: Sprite_Enemys01-Angry
       rect:
         serializedVersion: 2
         x: 0
@@ -101,20 +113,41 @@ TextureImporter:
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4a5bbac03dbe29880800000000000000
-      internalID: -8605556646268389980
+      spriteID: e0b05520506d33100800000000000000
+      internalID: 86648134852479758
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Enemys_1
+      name: Sprite_Enemys01-Sad
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 512
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a68da9f6effc5cd80800000000000000
+      internalID: -8230944052248651670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Enemys02-Angry
       rect:
         serializedVersion: 2
         x: 0
@@ -122,14 +155,35 @@ TextureImporter:
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8bc9b92879eac3890800000000000000
-      internalID: -7476909315587334984
+      spriteID: b421ff5e7c38a7340800000000000000
+      internalID: 4862343642280301131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Enemys02-Sad
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c71cbc942c390e980800000000000000
+      internalID: -8511640833059208836
       vertices: []
       indices: 
       edges: []
