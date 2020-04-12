@@ -90,7 +90,7 @@ public class Flock : MonoBehaviour
     private List<Transform> GetNearbyObjects(Agent agent)
     {
         List<Transform> context = new List<Transform>();
-        Collider2D[] contextColliders = Physics2D.OverlapCircleAll(agent.transform.position, neighborRadius);
+        Collider2D[] contextColliders = GetComponentsInChildren<Collider2D>();
 
         foreach (Collider2D c in contextColliders)
         {

@@ -29,8 +29,6 @@ public class RoomTriggerScript : MonoBehaviour
         {
         foreach(EnemyController enemy in _enemies)
         {
-            if(enemy ==null)
-            _enemies.Remove(enemy);
             if(!enemy._isHit)
             {
                 return;               

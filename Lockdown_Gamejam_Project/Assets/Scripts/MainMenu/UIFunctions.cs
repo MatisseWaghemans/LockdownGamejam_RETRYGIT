@@ -61,7 +61,7 @@ public class UIFunctions : MonoBehaviour
     }
     public void StartGame()
     {
-        SceneManager.LoadScene("FirstLevel");
+        SceneManager.LoadScene("FirstLevel 1");
     }
     public void PlayClicked()
     {
