@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -348,7 +348,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1637594731}
-        m_MethodName: PlayClicked
+        m_MethodName: DifficultyClicked
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -465,7 +465,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 0.9812313, g: 1, b: 0.801, a: 1}
-    m_HighlightedColor: {r: 1, g: 1, b: 0.603, a: 1}
+    m_HighlightedColor: {r: 0.90099996, g: 0.90099996, b: 0.6319231, a: 1}
     m_PressedColor: {r: 0.397, g: 0.06432871, b: 0.042273153, a: 1}
     m_SelectedColor: {r: 0.39607847, g: 0.0627451, b: 0.043137256, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -488,7 +488,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1637594731}
-        m_MethodName: PlayClicked
+        m_MethodName: DifficultyClicked
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3551,7 +3551,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1637594731}
-        m_MethodName: PlayClicked
+        m_MethodName: DifficultyClicked
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

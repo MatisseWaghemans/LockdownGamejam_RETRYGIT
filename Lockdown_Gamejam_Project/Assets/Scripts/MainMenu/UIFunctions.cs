@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -18,6 +19,8 @@ public class UIFunctions : MonoBehaviour
 
     private float timer;
     private bool playClicked;
+    private bool difficultyClicked;
+
     private bool returnClicked;
 
 
@@ -43,8 +46,24 @@ public class UIFunctions : MonoBehaviour
             timer = 0;
             playClicked = false;
         }
+        if(difficultyClicked)
+        {
+            timer += Time.deltaTime;
+        }
+        if (timer >= 4.5f)
+        {
+            PlayWithDifficulty();
+            timer = 0;
+            playClicked = false;
+        }
 
     }
+
+    private void PlayWithDifficulty()
+    {
+        SceneManager.LoadScene("FirstLevel 1");
+    }
+
     public void TriggerCameraShake()
     {
         textAnimator.SetTrigger("ScreenShake");
@@ -66,6 +85,13 @@ public class UIFunctions : MonoBehaviour
     public void PlayClicked()
     {
         playClicked = true;
+        ladaAnimator.SetTrigger("PlayPressed");
+        playerAnimator.SetTrigger("PlayPressed");
+        vignetteAnimator.SetTrigger("PlayPressed");
+    }
+    public void DifficultyClicked()
+    {
+        difficultyClicked = true;
         ladaAnimator.SetTrigger("PlayPressed");
         playerAnimator.SetTrigger("PlayPressed");
         vignetteAnimator.SetTrigger("PlayPressed");

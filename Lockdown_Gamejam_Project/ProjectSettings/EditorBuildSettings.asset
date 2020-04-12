@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/VictoryScreen.unity
     guid: bfd5b73987b3fd04689f8f09034487f9
+  - enabled: 1
+    path: Assets/Scenes/DifficultyScreen.unity
+    guid: 83ee15dd3675d074c9b587d374461847
   m_configObjects: {}

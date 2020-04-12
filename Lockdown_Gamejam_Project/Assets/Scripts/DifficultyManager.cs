@@ -39,17 +39,14 @@ public class DifficultyManager :MonoBehaviour
         if(difficulty==0)
         {
             SetDifficulty(Difficulty.easy);
-            SceneManager.LoadScene("FirstLevel 1");
         }
         if(difficulty==1)
         {
             SetDifficulty(Difficulty.medium);
-            SceneManager.LoadScene("FirstLevel 1");
         }
         if(difficulty==2)
         {
             SetDifficulty(Difficulty.hard);
-            SceneManager.LoadScene("FirstLevel 1");
         }
     }
 }
