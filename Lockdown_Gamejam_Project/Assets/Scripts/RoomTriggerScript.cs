@@ -33,9 +33,9 @@ public class RoomTriggerScript : MonoBehaviour
             {
                 return;               
             }
-            else _allEnemiesHit = true;
         }
-        if(_allEnemiesHit)
+        _allEnemiesHit = true;
+            if (_allEnemiesHit && _generator.CurrentRoom != _generator._roomList.Count)
         {
             _generator.CurrentRoom++;
             GoToNextRoom();
