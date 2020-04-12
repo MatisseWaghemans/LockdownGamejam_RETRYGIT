@@ -63,6 +63,20 @@ public class Flock : MonoBehaviour
         newAgent.name = "Agent " + agents.Count;
         newAgent.transform.GetComponentInChildren<SpriteRenderer>().sprite = sprite;
         agents.Add(newAgent);
+        foreach(Agent agent in agents)
+        {
+            if(agent==null)
+            {
+                agents.Remove(agent);
+            }
+
+        }
+    }
+    public void CheckAgents()
+    {
+        agents.Clear();
+        agents.AddRange(FindObjectsOfType<Agent>());
+        agents.TrimExcess();
     }
 
     // Update is called once per frame

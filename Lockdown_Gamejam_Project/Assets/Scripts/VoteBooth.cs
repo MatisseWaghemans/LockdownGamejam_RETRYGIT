@@ -19,7 +19,7 @@ public class VoteBooth : MonoBehaviour
     private void Start()
     {
         _player = (PlayerMovement)FindObjectOfType(typeof(PlayerMovement));
-        _scoreManager = (ScoreManager)FindObjectOfType(typeof(ScoreManager));
+        _scoreManager = FindObjectOfType<ScoreManager>();
 
         _flock = FindObjectOfType<Flock>().gameObject;
     }
@@ -74,9 +74,11 @@ public class VoteBooth : MonoBehaviour
         {
             GameObject follower = _flock.transform.GetChild(followerIndex).gameObject;
             Flock flock = _flock.GetComponent<Flock>();
-            Destroy(follower);
             flock.agents.Remove(flock.agents[followerIndex]);
+            Destroy(follower);
 
         }
+        Flock newFlock = _flock.GetComponent<Flock>();
+        newFlock.CheckAgents();
     }
 }

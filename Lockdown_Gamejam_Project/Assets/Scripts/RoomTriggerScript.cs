@@ -61,21 +61,21 @@ public class RoomTriggerScript : MonoBehaviour
     }
     void GoToNextRoom()
     {
-
-        GetComponentInParent<CameraScriptWard>().NextRoom();
-        if(GetComponentInParent<CameraScriptWard>().Direction.x>0)
+        CameraScriptWard cam =GetComponentInParent<CameraScriptWard>();
+        cam.NextRoom();
+        if(cam.Direction.x>0)
         {
             _colliders[1].enabled=true;
         }
-        if(GetComponentInParent<CameraScriptWard>().Direction.x<0)
+        else if(cam.Direction.x<0)
         {
             _colliders[3].enabled=true;
         }
-        if(GetComponentInParent<CameraScriptWard>().Direction.y<0)
+        else if(cam.Direction.y<0)
         {
             _colliders[0].enabled=true;
         }
-        if(GetComponentInParent<CameraScriptWard>().Direction.y>0)
+        else if(cam.Direction.y>0)
         {
             _colliders[2].enabled=true;
         }
