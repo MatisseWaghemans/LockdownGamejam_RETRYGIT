@@ -37,18 +37,19 @@ public class SoundPlayer : MonoBehaviour
         }
         if(SceneManager.GetActiveScene()==SceneManager.GetSceneByBuildIndex(2))
         {
+            GetComponent<AudioSource>().Stop();
+            GetComponent<AudioSource>().pitch=0.2f;
             GetComponent<AudioSource>().clip = _clips[0];
             GetComponent<AudioSource>().volume=0.2f;
-            GetComponent<AudioSource>().pitch=0.2f;
             GetComponent<AudioSource>().Play();
         }
         if(SceneManager.GetActiveScene()==SceneManager.GetSceneByBuildIndex(0))
         {
             GetComponent<AudioSource>().clip = _clips[0];
+            GetComponent<AudioSource>().pitch=1;
             GetComponent<AudioSource>().volume=0.2f;
             GetComponent<AudioSource>().Play();
         }
-        else GetComponent<AudioSource>().pitch=1;
     }
 
 }
