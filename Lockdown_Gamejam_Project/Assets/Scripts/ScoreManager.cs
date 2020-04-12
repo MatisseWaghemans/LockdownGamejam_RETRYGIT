@@ -14,7 +14,6 @@ public class ScoreManager : MonoBehaviour
     public void AddScore(int amount)
     {
         _score += amount;
-        Debug.Log(_score);
     }
 
     public void Reset()

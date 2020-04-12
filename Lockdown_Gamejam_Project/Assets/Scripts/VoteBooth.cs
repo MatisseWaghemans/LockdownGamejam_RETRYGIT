@@ -31,7 +31,6 @@ public class VoteBooth : MonoBehaviour
             if (other.CompareTag("Player"))
             {
                 int count = _flock.transform.childCount-1;
-                Debug.Log(count);
                 if (_isEnd)
                 {
                     if (count == 0)
@@ -47,7 +46,6 @@ public class VoteBooth : MonoBehaviour
                     }
                     return;
                 }
-                Debug.Log("Player has entered");
                 if (count == 0)
                 {
                     return;

@@ -9,7 +9,8 @@
                 "Assets/Scenes/MainMenu.unity",
                 "Assets/Scenes/FirstLevel 1.unity",
                 "Assets/Scenes/DeathScreen.unity",
-                "Assets/Scenes/VictoryScreen.unity"
+                "Assets/Scenes/VictoryScreen.unity",
+                "Assets/Scenes/DifficultyScreen.unity"
             ]
         },
         {
@@ -21,7 +22,8 @@
                 "Assets/Scenes/MainMenu.unity",
                 "Assets/Scenes/FirstLevel 1.unity",
                 "Assets/Scenes/DeathScreen.unity",
-                "Assets/Scenes/VictoryScreen.unity"
+                "Assets/Scenes/VictoryScreen.unity",
+                "Assets/Scenes/DifficultyScreen.unity"
             ]
         },
         {
@@ -33,7 +35,8 @@
                 "Assets/Scenes/MainMenu.unity",
                 "Assets/Scenes/FirstLevel 1.unity",
                 "Assets/Scenes/DeathScreen.unity",
-                "Assets/Scenes/VictoryScreen.unity"
+                "Assets/Scenes/VictoryScreen.unity",
+                "Assets/Scenes/DifficultyScreen.unity"
             ]
         },
         {
@@ -45,7 +48,8 @@
                 "Assets/Scenes/MainMenu.unity",
                 "Assets/Scenes/FirstLevel 1.unity",
                 "Assets/Scenes/DeathScreen.unity",
-                "Assets/Scenes/VictoryScreen.unity"
+                "Assets/Scenes/VictoryScreen.unity",
+                "Assets/Scenes/DifficultyScreen.unity"
             ]
         },
         {
@@ -57,7 +61,8 @@
                 "Assets/Scenes/MainMenu.unity",
                 "Assets/Scenes/FirstLevel 1.unity",
                 "Assets/Scenes/DeathScreen.unity",
-                "Assets/Scenes/VictoryScreen.unity"
+                "Assets/Scenes/VictoryScreen.unity",
+                "Assets/Scenes/DifficultyScreen.unity"
             ]
         },
         {
@@ -69,7 +74,8 @@
                 "Assets/Scenes/MainMenu.unity",
                 "Assets/Scenes/FirstLevel 1.unity",
                 "Assets/Scenes/DeathScreen.unity",
-                "Assets/Scenes/VictoryScreen.unity"
+                "Assets/Scenes/VictoryScreen.unity",
+                "Assets/Scenes/DifficultyScreen.unity"
             ]
         },
         {
@@ -81,7 +87,8 @@
                 "Assets/Scenes/MainMenu.unity",
                 "Assets/Scenes/FirstLevel 1.unity",
                 "Assets/Scenes/DeathScreen.unity",
-                "Assets/Scenes/VictoryScreen.unity"
+                "Assets/Scenes/VictoryScreen.unity",
+                "Assets/Scenes/DifficultyScreen.unity"
             ]
         },
         {
@@ -93,7 +100,8 @@
                 "Assets/Scenes/MainMenu.unity",
                 "Assets/Scenes/FirstLevel 1.unity",
                 "Assets/Scenes/DeathScreen.unity",
-                "Assets/Scenes/VictoryScreen.unity"
+                "Assets/Scenes/VictoryScreen.unity",
+                "Assets/Scenes/DifficultyScreen.unity"
             ]
         },
         {
@@ -105,7 +113,8 @@
                 "Assets/Scenes/MainMenu.unity",
                 "Assets/Scenes/FirstLevel 1.unity",
                 "Assets/Scenes/DeathScreen.unity",
-                "Assets/Scenes/VictoryScreen.unity"
+                "Assets/Scenes/VictoryScreen.unity",
+                "Assets/Scenes/DifficultyScreen.unity"
             ]
         },
         {
@@ -117,7 +126,8 @@
                 "Assets/Scenes/MainMenu.unity",
                 "Assets/Scenes/FirstLevel 1.unity",
                 "Assets/Scenes/DeathScreen.unity",
-                "Assets/Scenes/VictoryScreen.unity"
+                "Assets/Scenes/VictoryScreen.unity",
+                "Assets/Scenes/DifficultyScreen.unity"
             ]
         },
         {
@@ -143,7 +153,8 @@
                 "Assets/Scenes/MainMenu.unity",
                 "Assets/Scenes/FirstLevel 1.unity",
                 "Assets/Scenes/DeathScreen.unity",
-                "Assets/Scenes/VictoryScreen.unity"
+                "Assets/Scenes/VictoryScreen.unity",
+                "Assets/Scenes/DifficultyScreen.unity"
             ]
         },
         {
@@ -162,7 +173,8 @@
                 "Assets/Scenes/MainMenu.unity",
                 "Assets/Scenes/FirstLevel 1.unity",
                 "Assets/Scenes/DeathScreen.unity",
-                "Assets/Scenes/VictoryScreen.unity"
+                "Assets/Scenes/VictoryScreen.unity",
+                "Assets/Scenes/DifficultyScreen.unity"
             ]
         },
         {
@@ -195,7 +207,8 @@
                 "Assets/Scenes/MainMenu.unity",
                 "Assets/Scenes/FirstLevel 1.unity",
                 "Assets/Scenes/DeathScreen.unity",
-                "Assets/Scenes/VictoryScreen.unity"
+                "Assets/Scenes/VictoryScreen.unity",
+                "Assets/Scenes/DifficultyScreen.unity"
             ]
         },
         {
@@ -298,7 +311,8 @@
                 "Assets/Scenes/MainMenu.unity",
                 "Assets/Scenes/FirstLevel 1.unity",
                 "Assets/Scenes/DeathScreen.unity",
-                "Assets/Scenes/VictoryScreen.unity"
+                "Assets/Scenes/VictoryScreen.unity",
+                "Assets/Scenes/DifficultyScreen.unity"
             ]
         },
         {
@@ -309,7 +323,8 @@
             "usedInScenes": [
                 "Assets/Scenes/MainMenu.unity",
                 "Assets/Scenes/DeathScreen.unity",
-                "Assets/Scenes/VictoryScreen.unity"
+                "Assets/Scenes/VictoryScreen.unity",
+                "Assets/Scenes/DifficultyScreen.unity"
             ]
         },
         {
@@ -321,7 +336,8 @@
                 "Assets/Scenes/MainMenu.unity",
                 "Assets/Scenes/FirstLevel 1.unity",
                 "Assets/Scenes/DeathScreen.unity",
-                "Assets/Scenes/VictoryScreen.unity"
+                "Assets/Scenes/VictoryScreen.unity",
+                "Assets/Scenes/DifficultyScreen.unity"
             ]
         },
         {
@@ -333,7 +349,8 @@
                 "Assets/Scenes/MainMenu.unity",
                 "Assets/Scenes/FirstLevel 1.unity",
                 "Assets/Scenes/DeathScreen.unity",
-                "Assets/Scenes/VictoryScreen.unity"
+                "Assets/Scenes/VictoryScreen.unity",
+                "Assets/Scenes/DifficultyScreen.unity"
             ]
         },
         {
@@ -345,7 +362,8 @@
                 "Assets/Scenes/MainMenu.unity",
                 "Assets/Scenes/FirstLevel 1.unity",
                 "Assets/Scenes/DeathScreen.unity",
-                "Assets/Scenes/VictoryScreen.unity"
+                "Assets/Scenes/VictoryScreen.unity",
+                "Assets/Scenes/DifficultyScreen.unity"
             ]
         },
         {
@@ -357,19 +375,8 @@
                 "Assets/Scenes/MainMenu.unity",
                 "Assets/Scenes/FirstLevel 1.unity",
                 "Assets/Scenes/DeathScreen.unity",
-                "Assets/Scenes/VictoryScreen.unity"
-            ]
-        },
-        {
-            "managedAssemblyName": "UnityEngine.dll",
-            "nativeClass": "AudioSource",
-            "fullManagedTypeName": "UnityEngine.AudioSource",
-            "moduleName": "Audio",
-            "usedInScenes": [
-                "Assets/Scenes/MainMenu.unity",
-                "Assets/Scenes/FirstLevel 1.unity",
-                "Assets/Scenes/DeathScreen.unity",
-                "Assets/Scenes/VictoryScreen.unity"
+                "Assets/Scenes/VictoryScreen.unity",
+                "Assets/Scenes/DifficultyScreen.unity"
             ]
         },
         {
@@ -381,7 +388,8 @@
                 "Assets/Scenes/MainMenu.unity",
                 "Assets/Scenes/FirstLevel 1.unity",
                 "Assets/Scenes/DeathScreen.unity",
-                "Assets/Scenes/VictoryScreen.unity"
+                "Assets/Scenes/VictoryScreen.unity",
+                "Assets/Scenes/DifficultyScreen.unity"
             ]
         },
         {
@@ -393,7 +401,8 @@
                 "Assets/Scenes/MainMenu.unity",
                 "Assets/Scenes/FirstLevel 1.unity",
                 "Assets/Scenes/DeathScreen.unity",
-                "Assets/Scenes/VictoryScreen.unity"
+                "Assets/Scenes/VictoryScreen.unity",
+                "Assets/Scenes/DifficultyScreen.unity"
             ]
         },
         {
@@ -404,7 +413,8 @@
             "usedInScenes": [
                 "Assets/Scenes/MainMenu.unity",
                 "Assets/Scenes/DeathScreen.unity",
-                "Assets/Scenes/VictoryScreen.unity"
+                "Assets/Scenes/VictoryScreen.unity",
+                "Assets/Scenes/DifficultyScreen.unity"
             ]
         },
         {
@@ -415,7 +425,8 @@
             "usedInScenes": [
                 "Assets/Scenes/MainMenu.unity",
                 "Assets/Scenes/DeathScreen.unity",
-                "Assets/Scenes/VictoryScreen.unity"
+                "Assets/Scenes/VictoryScreen.unity",
+                "Assets/Scenes/DifficultyScreen.unity"
             ]
         },
         {
@@ -426,7 +437,8 @@
             "usedInScenes": [
                 "Assets/Scenes/MainMenu.unity",
                 "Assets/Scenes/DeathScreen.unity",
-                "Assets/Scenes/VictoryScreen.unity"
+                "Assets/Scenes/VictoryScreen.unity",
+                "Assets/Scenes/DifficultyScreen.unity"
             ]
         },
         {
@@ -438,7 +450,8 @@
                 "Assets/Scenes/MainMenu.unity",
                 "Assets/Scenes/FirstLevel 1.unity",
                 "Assets/Scenes/DeathScreen.unity",
-                "Assets/Scenes/VictoryScreen.unity"
+                "Assets/Scenes/VictoryScreen.unity",
+                "Assets/Scenes/DifficultyScreen.unity"
             ]
         },
         {
@@ -450,7 +463,8 @@
                 "Assets/Scenes/MainMenu.unity",
                 "Assets/Scenes/FirstLevel 1.unity",
                 "Assets/Scenes/DeathScreen.unity",
-                "Assets/Scenes/VictoryScreen.unity"
+                "Assets/Scenes/VictoryScreen.unity",
+                "Assets/Scenes/DifficultyScreen.unity"
             ]
         },
         {
@@ -462,7 +476,8 @@
                 "Assets/Scenes/MainMenu.unity",
                 "Assets/Scenes/FirstLevel 1.unity",
                 "Assets/Scenes/DeathScreen.unity",
-                "Assets/Scenes/VictoryScreen.unity"
+                "Assets/Scenes/VictoryScreen.unity",
+                "Assets/Scenes/DifficultyScreen.unity"
             ]
         },
         {
@@ -474,7 +489,8 @@
                 "Assets/Scenes/MainMenu.unity",
                 "Assets/Scenes/FirstLevel 1.unity",
                 "Assets/Scenes/DeathScreen.unity",
-                "Assets/Scenes/VictoryScreen.unity"
+                "Assets/Scenes/VictoryScreen.unity",
+                "Assets/Scenes/DifficultyScreen.unity"
             ]
         },
         {
@@ -486,7 +502,8 @@
                 "Assets/Scenes/MainMenu.unity",
                 "Assets/Scenes/FirstLevel 1.unity",
                 "Assets/Scenes/DeathScreen.unity",
-                "Assets/Scenes/VictoryScreen.unity"
+                "Assets/Scenes/VictoryScreen.unity",
+                "Assets/Scenes/DifficultyScreen.unity"
             ]
         },
         {
@@ -497,7 +514,8 @@
             "usedInScenes": [
                 "Assets/Scenes/MainMenu.unity",
                 "Assets/Scenes/DeathScreen.unity",
-                "Assets/Scenes/VictoryScreen.unity"
+                "Assets/Scenes/VictoryScreen.unity",
+                "Assets/Scenes/DifficultyScreen.unity"
             ]
         },
         {
@@ -509,7 +527,8 @@
                 "Assets/Scenes/MainMenu.unity",
                 "Assets/Scenes/FirstLevel 1.unity",
                 "Assets/Scenes/DeathScreen.unity",
-                "Assets/Scenes/VictoryScreen.unity"
+                "Assets/Scenes/VictoryScreen.unity",
+                "Assets/Scenes/DifficultyScreen.unity"
             ]
         },
         {
@@ -520,7 +539,8 @@
             "usedInScenes": [
                 "Assets/Scenes/MainMenu.unity",
                 "Assets/Scenes/DeathScreen.unity",
-                "Assets/Scenes/VictoryScreen.unity"
+                "Assets/Scenes/VictoryScreen.unity",
+                "Assets/Scenes/DifficultyScreen.unity"
             ]
         },
         {
@@ -530,9 +550,7 @@
             "moduleName": "Audio",
             "usedInScenes": [
                 "Assets/Scenes/MainMenu.unity",
-                "Assets/Scenes/FirstLevel 1.unity",
-                "Assets/Scenes/DeathScreen.unity",
-                "Assets/Scenes/VictoryScreen.unity"
+                "Assets/Scenes/FirstLevel 1.unity"
             ]
         },
         {
@@ -542,9 +560,7 @@
             "moduleName": "Audio",
             "usedInScenes": [
                 "Assets/Scenes/MainMenu.unity",
-                "Assets/Scenes/FirstLevel 1.unity",
-                "Assets/Scenes/DeathScreen.unity",
-                "Assets/Scenes/VictoryScreen.unity"
+                "Assets/Scenes/FirstLevel 1.unity"
             ]
         },
         {
@@ -556,7 +572,8 @@
                 "Assets/Scenes/MainMenu.unity",
                 "Assets/Scenes/FirstLevel 1.unity",
                 "Assets/Scenes/DeathScreen.unity",
-                "Assets/Scenes/VictoryScreen.unity"
+                "Assets/Scenes/VictoryScreen.unity",
+                "Assets/Scenes/DifficultyScreen.unity"
             ]
         },
         {
@@ -568,7 +585,8 @@
                 "Assets/Scenes/MainMenu.unity",
                 "Assets/Scenes/FirstLevel 1.unity",
                 "Assets/Scenes/DeathScreen.unity",
-                "Assets/Scenes/VictoryScreen.unity"
+                "Assets/Scenes/VictoryScreen.unity",
+                "Assets/Scenes/DifficultyScreen.unity"
             ]
         },
         {
@@ -580,7 +598,17 @@
                 "Assets/Scenes/MainMenu.unity",
                 "Assets/Scenes/FirstLevel 1.unity",
                 "Assets/Scenes/DeathScreen.unity",
-                "Assets/Scenes/VictoryScreen.unity"
+                "Assets/Scenes/VictoryScreen.unity",
+                "Assets/Scenes/DifficultyScreen.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "AudioSource",
+            "fullManagedTypeName": "UnityEngine.AudioSource",
+            "moduleName": "Audio",
+            "usedInScenes": [
+                "Assets/Scenes/FirstLevel 1.unity"
             ]
         },
         {
@@ -716,6 +744,13 @@
         {
             "managedAssemblyName": "Assembly-CSharp.dll",
             "nativeClass": "",
+            "fullManagedTypeName": "DifficultyManager",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
             "fullManagedTypeName": "EnemyController",
             "moduleName": "",
             "usedInScenes": []
@@ -780,6 +815,13 @@
             "managedAssemblyName": "Assembly-CSharp.dll",
             "nativeClass": "",
             "fullManagedTypeName": "ShowScore",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "SoundPlayer",
             "moduleName": "",
             "usedInScenes": []
         },
